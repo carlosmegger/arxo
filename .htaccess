@@ -1,0 +1,297 @@
+AddHandler php54-script .php
+suPHP_ConfigPath /home/arxo/ 
+
+RewriteEngine On
+
+# --- redirect site antigo
+RewriteRule ^v2/contato http://www.arxo.com/fale-conosco/ [R=301,NC,L]
+RewriteRule ^v2/noticias http://www.arxo.com/novidades/ [R=301,NC,L]
+RewriteRule ^v2/instituto http://www.arxo.com/institucional/ [R=301,NC,L]
+RewriteRule ^v2/a-arxo http://www.arxo.com/institucional/ [R=301,NC,L]
+RewriteRule ^v2/certificacoes http://www.arxo.com/institucional/ [R=301,NC,L]
+RewriteRule ^v2/representantes http://www.arxo.com/representantes/ [R=301,NC,L]
+RewriteRule ^v2/localizacao http://www.arxo.com/localizacao/ [R=301,NC,L]
+RewriteRule ^v2/produtos/filtros http://www.arxo.com/produtos/ [R=301,NC,L]
+RewriteRule ^v2/produtos/([^/]+) http://www.arxo.com/$1 [R=301,NC,L]
+RewriteRule ^v2/noticia/ http://www.arxo.com/novidades/ [R=301,NC,L]
+RewriteRule ^v2/portal-do-cliente/ http://www.arxo.com/portal-do-cliente/ [R=301,NC,L]
+RewriteRule ^v2/portal-do-colaborador/ http://www.arxo.com/portal-do-colaborador/ [R=301,NC,L]
+
+RewriteCond %{REQUEST_URI} !/(contato|noticias|instituto|a-arxo|certificacoes|representantes)
+RewriteCond %{REQUEST_URI} !/(localizacao|produtos|noticia|portal-do-cliente|portal-do-colaborador)
+RewriteRule ^v2/.* http://www.arxo.com/ [R=301,NC,L]
+# --- redirect site antigo
+
+RewriteRule ^br/?$ index.php?idioma=br [NC,L]
+RewriteRule ^en/?$ index.php?idioma=en [NC,L]
+RewriteRule ^es/?$ index.php?idioma=es [NC,L]
+
+# --- sistema
+RewriteRule ^sistema/$ sistema/index.php [NC,L]
+
+# --- institucional
+RewriteRule ^institucional/?$ institucional.php?idioma=br [NC,L]
+RewriteRule ^ideologia/?$ institucional.php?ancora=ideologia&idioma=br [NC,L]
+RewriteRule ^veryx/?$ institucional.php?ancora=veryx&idioma=br [NC,NE,L]
+RewriteRule ^premios-e-certificacoes/?$ institucional.php?ancora=certificacoes&idioma=br [NC,NE,L]
+RewriteRule ^clientes/?$ institucional.php?ancora=clientes&idioma=br [NC,NE,L]
+
+RewriteRule ^en/institutional/?$ institucional.php?idioma=en [NC,L]
+RewriteRule ^en/ideology/?$ institucional.php?ancora=ideologia&idioma=en [NC,L]
+RewriteRule ^en/rewards-and-certifications/?$ institucional.php?ancora=certificacoes&idioma=en [NC,NE,L]
+RewriteRule ^en/ideology/?$ institucional.php?ancora=ideologia&idioma=en [NC,L]
+RewriteRule ^en/clients/?$ institucional.php?ancora=clientes&idioma=br [NC,NE,L]
+
+RewriteRule ^(es|en)/institucional/?$ institucional.php?idioma=$1 [NC,L]
+RewriteRule ^(es|en)/ideologia/?$ institucional.php?ancora=ideologia&idioma=$1 [NC,L]
+RewriteRule ^(es|en)/veryx/?$ institucional.php?ancora=veryx&idioma=$1 [NC,NE,L]
+RewriteRule ^(es|en)/premios-e-certificacoes/?$ institucional.php?ancora=certificacoes&idioma=$1 [NC,NE,L]
+RewriteRule ^(es|en)/clientes/?$ institucional.php?ancora=clientes&idioma=$1 [NC,NE,L]
+
+RewriteRule ^quienes-somos/?$ /es/quienes-somos/ [R=301,NC,L]
+RewriteRule ^es/quienes-somos/?$ institucional.php?idioma=es [NC,L]
+RewriteRule ^es/portal-del-cliente/?$ portal-do-cliente.php?idioma=es [NC,L]
+RewriteRule ^es/portal-del-empleado/?$ portal-do-colaborador.php?idioma=es [NC,L]
+RewriteRule ^es/premios-e-certificaciones/$ institucional.php?ancora=certificacoes&idioma=es [NC,L]
+
+# --- produtos
+RewriteRule ^produtos/?$ produtos.php?idioma=br [NC,L]
+RewriteRule ^en/products/?$ produtos.php?idioma=en [NC,L]
+RewriteRule ^es/productos/$ produtos.php?idioma=es [NC,L]
+
+RewriteRule ^combustivel/?$ produtos.php?slug=combustivel&idioma=br [NC,L]
+RewriteRule ^combustivel/([^/]+)/([^/]+)/?$ produtos.php?slug=combustivel&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+RewriteRule ^fuel/$ /en/fuel/ [R=301,NC,L]
+RewriteRule ^fuel/([^/]+)/([^/]+)$ /en/fuel/$1/$2/ [R=301,NC,L]
+RewriteRule ^en/fuel/?$ produtos.php?slug=fuel&idioma=en [NC,L]
+RewriteRule ^en/fuel/([^/]+)/([^/]+)/?$ produtos.php?slug=fuel&tag=$1&idproduto=$2&idioma=en [NC,L]
+
+RewriteRule ^combustible/$ /es/combustible/ [R=301,NC,L]
+RewriteRule ^combustible/([^/]+)/([^/]+)/$ /es/combustible/$1/$2/ [R=301,NC,L]
+RewriteRule ^es/combustible/?$ produtos.php?slug=combustible&idioma=es [NC,L]
+RewriteRule ^es/combustible/([^/]+)/([^/]+)/?$ produtos.php?slug=combustible&tag=$1&idproduto=$2&idioma=es [NC,L]
+
+RewriteRule ^industria/?$ produtos.php?slug=industria [NC,L]
+RewriteRule ^industria/([^/]+)/([^/]+)/?$ produtos.php?slug=industria&tag=$1&idproduto=$2 [NC,L]
+
+RewriteRule ^es/industria/?$ produtos.php?slug=industria&idioma=es [NC,L]
+RewriteRule ^es/industria/([^/]+)/([^/]+)/?$ produtos.php?slug=industria&tag=$1&idproduto=$2&idioma=es [NC,L]
+
+RewriteRule ^industry/$ /en/industry/ [R=301,NC,L]
+RewriteRule ^industry/([^/]+)/([^/]+)/$ /en/industry/$1/$2/ [R=301,NC,L]
+RewriteRule ^en/industry/?$ produtos.php?slug=industry&idioma=en [NC,L]
+RewriteRule ^en/industry/([^/]+)/([^/]+)/?$ produtos.php?slug=industry&tag=$1&idproduto=$2&idioma=en [NC,L]
+
+RewriteRule ^offshore/?$ produtos.php?slug=offshore&idioma=br [NC,L]
+RewriteRule ^offshore/([^/]+)/([^/]+)/?$ produtos.php?slug=offshore&tag=$1&idproduto=$2&idioma=br [NC,L]
+RewriteRule ^(en|es)/offshore/?$ produtos.php?slug=offshore&idioma=$1 [NC,L]
+RewriteRule ^(en|es)/offshore/([^/]+)/([^/]+)/?$ produtos.php?slug=offshore&idioma=$1&tag=$2&idproduto=$3 [NC,L]
+
+RewriteRule ^aviacao/?$ produtos.php?slug=aviacao&idioma=br [NC,L]
+RewriteRule ^aviacao/([^/]+)/([^/]+)/?$ produtos.php?slug=aviacao&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+RewriteRule ^aviation/$ /en/aviation/ [R=301,NC,L]
+RewriteRule ^aviation/([^/]+)/([^/]+)/$ /en/aviation/$1/$2/ [R=301,NC,L]
+RewriteRule ^en/aviation/?$ produtos.php?slug=aviation&idioma=en [NC,L]
+RewriteRule ^en/aviation/([^/]+)/([^/]+)/?$ produtos.php?slug=aviation&tag=$1&idproduto=$2&idioma=en [NC,L]
+
+RewriteRule ^aviacion/$ /es/aviacion/ [R=301,NC,L]
+RewriteRule ^aviacion/([^/]+)/([^/]+)/$ /en/aviacion/$1/$2/ [R=301,NC,L]
+RewriteRule ^es/aviacion/?$ produtos.php?slug=aviacion&idioma=es [NC,L]
+RewriteRule ^es/aviacion/([^/]+)/([^/]+)/?$ produtos.php?slug=aviacion&tag=$1&idproduto=$2&idioma=es [NC,L]
+
+RewriteRule ^projetos-especiais/?$ produtos.php?slug=projetos-especiais&idioma=br [NC,L]
+RewriteRule ^projetos-especiais/([^/]+)/([^/]+)/?$ produtos.php?slug=projetos-especiais&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+RewriteRule ^special-projects/$ /en/special-projects/ [R=301,NC,L]
+RewriteRule ^special-projects/([^/]+)/([^/]+)/$ /en/special-projects/$1/$2/ [R=301,NC,L]
+RewriteRule ^en/special-projects/?$ produtos.php?slug=special-projects&idioma=en [NC,L]
+RewriteRule ^en/special-projects/([^/]+)/([^/]+)/?$ produtos.php?slug=special-projects&tag=$1&idproduto=$2&idioma=en [NC,L]
+
+RewriteRule ^proyectos-especiales/$ /es/proyectos-especiales/ [R=301,NC,L]
+RewriteRule ^proyectos-especiales/([^/]+)/([^/]+)/$ /es/proyectos-especiales/$1/$2/ [R=301,NC,L]
+RewriteRule ^es/proyectos-especiales/?$ produtos.php?slug=proyectos-especiales&idioma=es [NC,L]
+RewriteRule ^es/proyectos-especiales/([^/]+)/([^/]+)/?$ produtos.php?slug=proyectos-especiales&tag=$1&idproduto=$2&idioma=es [NC,L]
+
+# categorias novas
+
+RewriteRule ^posto-revendedor/?$ produtos.php?slug=posto-revendedor&idioma=br [NC,L]
+RewriteRule ^posto-revendedor/([^/]+)/([^/]+)/?$ produtos.php?slug=posto-revendedor&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+RewriteRule ^ponto-abastecimento-trr/?$ produtos.php?slug=ponto-abastecimento-trr&idioma=br [NC,L]
+RewriteRule ^ponto-abastecimento-trr/([^/]+)/([^/]+)/?$ produtos.php?slug=ponto-abastecimento-trr&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+RewriteRule ^pressurizados/?$ produtos.php?slug=pressurizados&idioma=br [NC,L]
+RewriteRule ^pressurizados/([^/]+)/([^/]+)/?$ produtos.php?slug=pressurizados&tag=$1&idproduto=$2&idioma=br [NC,L]
+
+# --- novidades
+RewriteRule ^noticias/(.*)$ /novidades/$1 [R=301,NC,L]
+RewriteRule ^noticia/(.*)$ /novidade/$1 [R=301,NC,L]
+
+RewriteRule ^novidades/?$ novidades.php?idioma=br [NC,L]
+RewriteRule ^novidades/((19|20)[\d]{2})/?$ novidades.php?idioma=br&ano=$1 [NC,L]
+RewriteRule ^novidades/((19|20)[\d]{2})/([\d]+)/?$ novidades.php?idioma=br&ano=$1&pagina=$2 [NC,L]
+RewriteRule ^novidades/([\d]+)/?$ novidades.php?idioma=br&pagina=$1 [NC,L]
+RewriteRule ^novidades/([^/]+)/?$ novidades.php?idioma=br&slug=$1&pagina=$2 [NC,L]
+RewriteRule ^novidades/([^/]+)/([\d]+)/?$ novidades.php?idioma=br&slug=$1&pagina=$2 [NC,L]
+RewriteRule ^novidade/[^/]+/([\d]{4})/([\d]{2})/([\d]{2})/([^/]+)/?$ novidades.php?idioma=br&data=$1-$2-$3&tag=$4 [NC,L]
+RewriteRule ^(en|es)/novidades/?$ novidades.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/novidades/((19|20)[\d]{2})/?$ novidades.php?idioma=$1&ano=$2 [NC,L]
+RewriteRule ^(en|es)/novidades/((19|20)[\d]{2})/([\d]+)/?$ novidades.php?idioma=$1&ano=$2&pagina=$3 [NC,L]
+RewriteRule ^(en|es)/novidades/([\d]+)/?$ novidades.php?idioma=$1&pagina=$2 [NC,L]
+RewriteRule ^(en|es)/novidades/([^/]+)/?$ novidades.php?idioma=$1&slug=$2&pagina=$3 [NC,L]
+RewriteRule ^(en|es)/novidades/([^/]+)/([\d]+)/?$ novidades.php?idioma=$1&slug=$2&pagina=$3 [NC,L]
+RewriteRule ^(en|es)/novidade/[^/]+/([\d]{4})/([\d]{2})/([\d]{2})/([^/]+)/?$ novidades.php?idioma=$1&data=$2-$3-$4&tag=$5 [NC,L]
+
+RewriteRule ^news/?$ novidades.php?idioma=en [NC,L]
+RewriteRule ^news/((19|20)[\d]{2})/?$ novidades.php?ano=$1&idioma=en [NC,L]
+RewriteRule ^news/((19|20)[\d]{2})/([\d]+)/?$ novidades.php?ano=$1&pagina=$2&idioma=en [NC,L]
+RewriteRule ^news/([\d]+)/?$ novidades.php?pagina=$2&idioma=en [NC,L]
+RewriteRule ^news/([^/]+)/?$ novidades.php?slug=$2&pagina=$3&idioma=en [NC,L]
+RewriteRule ^news/([^/]+)/([\d]+)/?$ novidades.php?slug=$2&pagina=$3&idioma=en [NC,L]
+RewriteRule ^new/[^/]+/([\d]{4})/([\d]{2})/([\d]{2})/([^/]+)/?$ novidades.php?data=$2-$3-$4&tag=$5&idioma=en [NC,L]
+
+#RewriteRule ^instituto/?$ instituto.php?idioma=br [NC,L]
+#RewriteRule ^(en|es)/instituto/?$ instituto.php?idioma=$1 [NC,L]
+RewriteRule ^comunicado/?$ instituto.php?idioma=br [NC,L]
+RewriteRule ^comunicacao-visual/?$ comunicacao-visual.php?idioma=br [NC,L]
+RewriteRule ^opcoes-financiamento/?$ opcoes-financiamento.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/comunicado/?$ instituto.php?idioma=$1 [NC,L]
+RewriteRule ^simposio/?$ simposio.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/simposio/?$ simposio.php?idioma=$1 [NC,L]
+
+RewriteRule ^revista-arxo/?$ revista.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/revista-arxo/?$ revista.php?idioma=$1 [NC,L]
+RewriteRule ^revista-arxo/([^/]+)/?$ revista.php?tag=$1 [NC,L]
+RewriteRule ^(en|es)/revista-arxo/([^/]+)/?$ revista.php?idioma=$1&tag=$2 [NC,L]
+
+# --- marcas
+RewriteRule ^marcas/?$ marcas.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/marcas/?$ marcas.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/marcas/([^/]+)/([^/]+)/?$ marcas.php?idioma=$1&slug=$2&id=$3 [NC,L]
+
+RewriteRule ^brands/$ /en/brands/ [R=301,NC,L]
+RewriteRule ^brands/([^/]+)/([^/]+)/$ /en/brands/$1/$2/ [R=301,NC,L]
+
+RewriteRule ^en/brands/?$ marcas.php?idioma=en [NC,L]
+RewriteRule ^en/brands/([^/]+)/([^/]+)/?$ marcas.php?idioma=en&slug=$2&id=$3 [NC,L]
+
+# --- contato
+RewriteRule ^contato/?$ fale-conosco.php?idioma=br [NC,L]
+RewriteRule ^fale-conosco/?$ fale-conosco.php?idioma=br [NC,L]
+RewriteRule ^trabalhe-conosco/?$ trabalhe-conosco.php?idioma=br [NC,L]
+RewriteRule ^localizacao/?$ localizacao.php?idioma=br [NC,L]
+
+RewriteRule ^contact/$ /en/contact/ [R=301,NC,L]
+RewriteRule ^contacto/$ /es/contacto/ [R=301,NC,L]
+RewriteRule ^hable-con-nosotros/?$ /es/hable-con-nosotros/ [R=301,NC,L]
+RewriteRule ^trabaja-con-nosotros/?$ /es/trabaja-con-nosotros/ [R=301,NC,L]
+RewriteRule ^ubicacion/?$ /es/ubicacion/ [R=301,NC,L]
+
+RewriteRule ^en/contact/$ fale-conosco.php?idioma=en [NC,L]
+RewriteRule ^es/contacto/$ fale-conosco.php?idioma=es [NC,L]
+RewriteRule ^es/hable-con-nosotros/?$ fale-conosco.php?idioma=es [NC,L]
+RewriteRule ^es/trabaja-con-nosotros/?$ trabalhe-conosco.php?idioma=es [NC,L]
+RewriteRule ^es/ubicacion/?$ localizacao.php?idioma=es [NC,L]
+
+RewriteRule ^(en|es)/contato/?$ fale-conosco.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/fale-conosco/?$ fale-conosco.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/trabalhe-conosco/?$ trabalhe-conosco.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/localizacao/?$ localizacao.php?idioma=$1 [NC,L]
+
+# --- representantes
+RewriteRule ^representatives/?$ /en/representatives/ [R=301,NC,L]
+
+RewriteRule ^representantes/?$ representantes.php?idioma=br [NC,L]
+RewriteRule ^representantes/([\d]+)/([^/]+)/?$ representantes.php?idioma=br&id=$1&slug=$2 [NC,L]
+RewriteRule ^en/representatives/?$ representantes.php?idioma=en [NC,L]
+RewriteRule ^en/representatives/([\d]+)/([^/]+)/?$ representantes.php?idioma=en&id=$1&slug=$2 [NC,L]
+RewriteRule ^(en|es)/representantes/?$ representantes.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/representantes/([\d]+)/([^/]+)/?$ representantes.php?idioma=$1&id=$2&slug=$3 [NC,L]
+
+# --- area restrita
+RewriteRule ^area-restrita/?$ area-restrita.php?idioma=br [NC,L]
+RewriteRule ^(en|es)area-restrita/?$ area-restrita.php?idioma=$1 [NC,L]
+RewriteRule ^restricted-area/?$ area-restrita.php?idioma=en [NC,L]
+RewriteRule ^zona-prohibida/?$ area-restrita.php?idioma=es [NC,L]
+
+RewriteRule ^portal-del-cliente/?$ /es/portal-del-cliente/ [R=301,NC,L]
+RewriteRule ^portal-del-empleado/?$ /es/portal-del-empleado/ [R=301,NC,L]
+
+RewriteRule ^portal-do-cliente/?$ portal-do-cliente.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/portal-do-cliente/?$ portal-do-cliente.php?idioma=$1 [NC,L]
+RewriteRule ^es/portal-del-cliente/?$ portal-do-cliente.php?idioma=es [NC,L]
+
+RewriteRule ^portal-do-cliente/([^/]+)/?$ downloads.php?idioma=br&categoria=$1 [NC,L]
+RewriteRule ^(en|es)/portal-do-cliente/([^/]+)/?$ downloads.php?idioma=$1&categoria=$2 [NC,L]
+RewriteRule ^es/portal-del-cliente/([^/]+)/?$ downloads.php?idioma=es&categoria=$1 [NC,L]
+
+RewriteRule ^portal-do-colaborador/?$ portal-do-colaborador.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/portal-do-colaborador/?$ portal-do-colaborador.php?idioma=$1 [NC,L]
+RewriteRule ^es/portal-del-empleado/?$ portal-do-colaborador.php?idioma=es [NC,L]
+
+# --- trabalhe conosco
+RewriteRule ^work-with-us/?$ /en/work-with-us/ [R=301,NC,L]
+RewriteRule ^trabaja-con-nosotros/?$ es/trabaja-con-nosotros/ [R=301,NC,L]
+
+RewriteRule ^trabalhe-conosco/?$ trabalhe-conosco.php?idioma=br [NC,L]
+RewriteRule ^(en|es)/trabalhe-conosco/?$ trabalhe-conosco.php?idioma=$1 [NC,L]
+RewriteRule ^en/work-with-us/?$ trabalhe-conosco.php?idioma=en [NC,L]
+RewriteRule ^es/trabaja-con-nosotros/?$ trabalhe-conosco.php?idioma=es [NC,L]
+
+# --- orcamento
+RewriteRule ^orcamento/?$ orcamento.php?idioma=br [NC,L]
+RewriteRule ^en/budget/?$ orcamento.php?idioma=en [NC,L]
+RewriteRule ^es/presupuesto/?$ orcamento.php?idioma=es [NC,L]
+
+# --- busca
+RewriteRule ^busca/?$ busca.php?idioma=br [NC,L]
+RewriteRule ^busca/([^/]+)/([\d]+)/?$ busca.php?idioma=br&busca=$1&pagina=$2 [NC,L]
+RewriteRule ^(en|es)/busca/?$ busca.php?idioma=$1 [NC,L]
+RewriteRule ^(en|es)/busca/([^/]+)/([\d]+)/?$ busca.php?idioma=$1&busca=$2&pagina=$3 [NC,L]
+
+# --- ajax
+RewriteRule ^lista_representantes$ ajax/ajax.php?acao=listaRepresentantes [NC,L]
+RewriteRule ^enviar_orcamento$ ajax/ajax.php?acao=orcamento [NC,L]
+RewriteRule ^produtos-rel/$ ajax/ajax.php?acao=produtos-rel [NC,L]
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+  
+	#Media: images, video, audio
+	ExpiresByType image/gif                 "access 1 week"
+	ExpiresByType image/png                 "modification plus 0 seconds"
+	ExpiresByType image/jpg                 "modification plus 0 seconds"
+	ExpiresByType image/jpeg                "modification plus 0 seconds"
+	ExpiresByType image/x-icon              "access 1 week"
+  
+	# CSS and JavaScript
+	ExpiresByType text/css                  "modification plus 0 seconds"
+	ExpiresByType application/javascript    "modification plus 0 seconds"
+	ExpiresByType text/javascript           "modification plus 0 seconds"
+	ExpiresByType text/x-javascript 	    "modification plus 0 seconds"
+	ExpiresByType application/x-javascript  "modification plus 0 seconds"
+	ExpiresByType application/ecmascript    "modification plus 0 seconds"
+	ExpiresByType text/ecmascript  		    "modification plus 0 seconds"
+
+	<IfModule mod_headers.c>
+		# Header append Cache-Control "public"
+	</IfModule>
+</IfModule>
+
+## Desativando ETag
+FileETag none
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/x-javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/ecmascript
+AddOutputFilterByType DEFLATE application/x-javascript
