@@ -1,5 +1,5 @@
 <?
-# --- inglês
+# inglês
 $_links = array(
 	# topo
 	'busca' => 'busca/',
@@ -11,17 +11,17 @@ $_links = array(
 	'portal do cliente'       => 'en/portal-do-cliente/',
 	'portal do colaborador'   => 'en/portal-do-colaborador/',
 	#quem somos
-	'institucional'           => 'en/Institutional/',
-	'ideologia'               => 'en/ideology/',
+	'institucional'           => 'en/institucional/',
+	'ideologia'               => 'en/ideologia/',
 	'veryx'                   => 'en/veryx/',
 	'premios e certificacoes' => 'en/premios-e-certificacoes/',
-	'clientes'                => 'en/clients/',
+	'clientes'                => 'en/clientes/',
 	# produtos
 	'produtos'                => 'en/products/',
 	'combustivel'             => 'en/combustivel/',
 	'industria'               => 'en/industria/',
 	'offshore'                => 'en/offshore/',
-	'aviacao'                 => 'en/aviation/',
+	'aviacao'                 => 'en/aviacao/',
 	'projetos especiais'      => 'en/projetos-especiais/',
 
 	'orcamento'				  => 'en/budget/',
@@ -38,14 +38,14 @@ $_links = array(
 );
 $_rotulos = array(
 	# topo
-	'resultados busca'		=> 'Sort results by:',
+	'resultados busca'		=> 'Search for:',
 	#index
 	'home qualidade 1'		  => 'Quality and safety of a leading company',
 	'home qualidade 2'		  => 'This is Arxo:',
 	# menu principal
-	'quem somos'              => 'ABOUT US',
-	'produtos'                => 'PRODUCTS AND SERVICES',
-	'novidades'               => 'NEWS',
+	'quem somos'              => 'QUEM SOMOS',
+	'produtos'                => 'PRODUTOS E SERVIÇOS',
+	'novidades'               => 'NOVIDADES',
 	'contato'                 => 'CONTATO',
 	'portal do cliente'	      => 'Portal do Cliente',
 	'portal do colaborador'   => 'Portal do Colaborador',
@@ -54,25 +54,25 @@ $_rotulos = array(
 	'ideologia'               => 'CORPORATE PHILOSOPHY',
 	'veryx'                   => 'VERYX',
 	'historiaarxo'            => 'OUR HISTORY',
-	'premios e certificacoes' => 'AWARDS AND CERTIFICATIONS',
-	'clientes'                => 'CLIENTS',
+	'premios e certificacoes' => 'PRÊMIOS E CERTIFICAÇÕES',
+	'clientes'                => 'CLIENTES',
 	# categorias
 	'combustivel'             => 'COMBUSTÍVEL',
-	'industria'               => 'INDUSTRY',
+	'industria'               => 'INDÚSTRIA',
 	'offshore'                => 'OFFSHORE',
-	'aviacao'                 => 'AVIATION',
+	'aviacao'                 => 'AVIAÇÃO',
 	'projetos especiais'      => 'PROJETOS ESPECIAIS',
 	# novidades
-	'noticias'                => 'NEWS',
-	'categorias'              => 'CATEGORIES',
-	'arquivos'                => 'ARCHIVE',
-	'instituto'               => 'INSTITUTE',
+	'noticias'                => 'NOTÍCIAS',
+	'categorias'              => 'CATEGORIAS',
+	'arquivos'                => 'ARQUIVOS',
+	'instituto'               => 'INSTITUTO',
 	'blog'                    => 'BLOG ARXO',
-	'revista arxo'            => 'MAGAZINE ARXO',
-	'ler mais'                => 'READ MORE',
+	'revista arxo'            => 'REVISTA ARXO',
+	'ler mais'                => 'LER MAIS',
 
-	'visualizar'              => 'View',
-	'fazer download'		  => 'Download',
+	'visualizar'              => 'Visualizar',
+	'fazer download'		  => 'Fazer Download',
 
 	# contato
 	'telefone_arxo'           => 'Matriz Arxo',
@@ -95,8 +95,8 @@ $_rotulos = array(
 $_textos = array(
 	'lema'                    => 'Quality and safety of a leading company',
 	'home qualidade 1'		  => 'Arxo has been investing in the quality and safety of its products since 1967. For this reason, it has become Latin America’s leader in manufacturing fuel storage tanks. Its work goes beyond turning raw material into a great product. The challenge is to create the best solution for your business.',
-	'home qualidade 2'		  => 'This is Arxo:',
-	'home qualidade 3'		  => 'A company that invests in quality and safety in everything it does.',
+	'home qualidade 2'		  => 'Nosso trabalho vai além de transformar a matéria-prima em um grande produto, nosso desafio é transformá-la na melhor solução para o seu negócio.',
+	'home qualidade 3'		  => 'Uma empresa que coloca qualidade e segurança em tudo que faz.',
 	'contato'                 => 'Entre em contato conosco utilizando o formulário abaixo:',
 	'trabalhe conosco'        => 'Envie seu currículo utilizando o formulário abaixo:',
 	'obrigatorios'            => '* Todos os campos são obrigatórios.',
@@ -112,18 +112,18 @@ $_textos = array(
 	'orcamento outros produtos' => 'Request other products',
 );
 $_label = array(
-	'empresa'			=> 'COMPANY',
-	'nome'				=> 'NAME',
-	'telefone'			=> 'PHONE',
+	'empresa'			=> 'EMPRESA',
+	'nome'				=> 'NOME',
+	'telefone'			=> 'TELEFONE',
 	'celular'			=> 'CELULAR',
 	'email'				=> 'E-MAIL',
-	'estado'			=> 'STATE',
-	'cidade'			=> 'CITY',
+	'estado'			=> 'ESTADO',
+	'cidade'			=> 'CIDADE',
 	'pais'				=> 'COUNTRY',
 	'area'				=> 'ÁREA DE INTERESSE',
-	'mensagem'			=> 'MESSAGE',
+	'mensagem'			=> 'MENSAGEM',
 	'curriculo'			=> 'CLIQUE PARA SELECIONAR SEU CURRÍCULO',
-	'submit'			=> 'SUBMIT',
+	'submit'			=> 'ENVIAR',
 
 	'adicione_produtos' => 'Add more products to your budget:',
 );
@@ -163,7 +163,7 @@ $_metas = array(
 	'titulo trabalhe-conosco' => 'Trabalhe Conosco - Arxo - Tanques para armazenamento de combustível',
 	'titulo orcamento' => 'Orçamento - Arxo - Tanques para armazenamento de combustível',
 
-	'descricao home' => 'ARXO.',
+	'descricao home' => 'Há 45 anos a Arxo é líder na América Latina em tanques para armazenamento de combustível. Possui diversas certificações.',
 	'descricao contato' => 'Entre em contato com a Arxo. Utilize o formulário e envie sua mensagem.',
 	'descricao ideologia' => 'A Arxo transpõe fronteiras gerando soluções seguras em infraestrutura e valoriza dinamismo, criatividade, lealdade e responsabilidade social.',
 	'descricao veryx' => '',
