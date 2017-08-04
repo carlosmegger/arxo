@@ -163,7 +163,7 @@ $_metas = array(
 	'titulo trabalhe-conosco' => 'Trabalhe Conosco - Arxo - Tanques para armazenamento de combustível',
 	'titulo orcamento' => 'Orçamento - Arxo - Tanques para armazenamento de combustível',
 
-	'descricao home' => 'Há 45 anos a Arxo é líder na América Latina em tanques para armazenamento de combustível. Possui diversas certificações.',
+	'descricao home' => 'ARXO.',
 	'descricao contato' => 'Entre em contato com a Arxo. Utilize o formulário e envie sua mensagem.',
 	'descricao ideologia' => 'A Arxo transpõe fronteiras gerando soluções seguras em infraestrutura e valoriza dinamismo, criatividade, lealdade e responsabilidade social.',
 	'descricao veryx' => '',

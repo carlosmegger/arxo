@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+
+body {
+	font-family: 'Raleway', helvetica, tahoma, arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #444242;
+	background-color: #ebebeb;
+	text-align: center;
+	max-height: 768px;
+	height: 100%;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.8em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.logo {
+	max-width: 200px;
+	width: 100%;
+	display: block;
+	margin: 3em auto;
+}
+
+.computer {
+	position: relative;
+	max-width: 380px;
+	width: 100%;
+	display: block;
+	margin: 2em auto 0;
+	z-index: 3;
+}

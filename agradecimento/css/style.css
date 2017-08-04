@@ -1,0 +1,525 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+
+
+
+/* latin-ext */
+
+@font-face {
+
+  font-family: 'Merriweather';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nhLwFvNxpkIoVzlXSkPSYkA.woff2) format('woff2');
+
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+
+}
+
+/* latin */
+
+@font-face {
+
+  font-family: 'Merriweather';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nk4GofcKVZz6wtzX_QUIqsI.woff2) format('woff2');
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+
+}
+
+/* latin-ext */
+
+@font-face {
+
+  font-family: 'Merriweather';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4ED0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+
+}
+
+/* latin */
+
+@font-face {
+
+  font-family: 'Merriweather';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+
+}
+
+
+
+body { color: #3F4750; font-family: 'zonapro', sans-serif; font-size: 15px; font-weight: 500; line-height: 28px; }
+
+body > img {display: block; height: 0;}
+
+a:focus { outline: none; }
+
+
+
+.row { margin-bottom: 25px; }
+
+
+
+.arvo { font-family: 'Arvo', sans-serif; font-weight: 700; }
+
+
+
+p { margin: 0 0 20px 0; }
+
+p.caption { margin-top: 10px; font-size: 12px; font-weight: 700; }
+
+
+
+h1 { color: #fff; font-weight: 900; }
+
+h1 .arvo { color: #107CAD; font-size: 30px; font-weight: 700; line-height: 40px; }
+
+
+
+h2 { margin: 50px 0 30px 0; color: #107CAD; font-size: 30px; font-weight: 900; }
+
+h2 .arvo { color: #3F4750; font-size: 28px; }
+
+
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img { margin: 0 auto; }
+
+
+
+.navbar-brand { float: none; height: auto; margin-top: 30px; }
+
+
+
+.has-feedback-left .form-control {
+
+	padding-right: 12px;
+
+	padding-left: 32.5px;
+
+}
+
+
+
+.btn {
+
+	padding: 8px 12px 4px 12px;
+
+	font-size: 12px;
+
+	font-weight: 900;
+
+	line-height: 21px;
+
+}
+
+
+
+.btn-lg, .btn-group-lg>.btn {
+
+	padding: 13px 17px 9px 17px;
+
+}
+
+
+
+.btn-default {
+
+    color: #F0F0F0;
+
+}
+
+
+
+.btn-default,
+
+.btn-default:focus,
+
+.btn-default:active,
+
+.btn-default:active:focus,
+
+.btn-default.active:focus {
+
+    background-color: #2785BE;
+
+    border: 0;
+
+    border-bottom-width: 2px;
+
+    border-color: #1B618C !important;
+
+	border-style: solid;
+
+}
+
+
+
+.btn-default:hover {
+
+	background-color: #2975A3;
+
+    color:#F0F0F0;
+
+}
+
+
+
+.cta-button{
+
+    cursor: pointer;
+
+    border: none;
+
+    text-decoration: none;
+
+    -webkit-border-radius: 7px;
+
+    -moz-border-radius: 7px;
+
+    border-radius: 7px;
+
+    font-weight: normal;
+
+    font-size: 1.2em;
+
+    text-align: center;
+
+    padding: .5em 2em;
+
+    width: auto;
+
+    display: inline-block;
+
+    color: #ffffff;
+
+    background-color: #2aad67;
+
+    margin: 15px auto 30px auto;
+
+}
+
+
+
+.cta-button:hover{
+
+    text-decoration: none;
+
+    -webkit-transition: all .2s ease-in-out;
+
+    -moz-transition: all .2s ease-in-out;
+
+    transition: all .2s ease-in-out;
+
+    background-color: #10934d;
+
+    color: #fff;
+
+}
+
+
+
+.cta-button:focus{color:#fff; text-decoration: none;}
+
+
+
+.btn-default:active,
+
+.btn-default:active:focus,
+
+.btn-default.active:focus  {
+
+	position: relative;
+
+	top: 1px;
+
+	margin-bottom: 1px;
+
+	border-bottom-width: 1px;
+
+	outline: 0;
+
+	-webkit-box-shadow: none;
+
+	box-shadow: none;
+
+}
+
+
+
+label { font-size: 13px; line-height: 18px; }
+
+.radio label, .checkbox label { font-size: 12px; line-height: 20px; }
+
+input[type=radio], input[type=checkbox] { margin-top: 3px; }
+
+.form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline { padding-top: 0; }
+
+.form-vertical .form-control-feedback { top: 29px; right: 15px; }
+
+.no-label .form-control-feedback { top: 7px; }
+
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active { background-color: #ddd; border-color: #939393 !important; }
+
+
+
+.msg-sucesso, .msg-erro { clear: both; display: none; margin-bottom: 0; }
+
+
+
+.help-block { margin: 0 0 -8px 0; }
+
+
+
+.extra-margin-top { margin-top: 15px; }
+
+.extra-margin-bottom { margin-bottom: 40px; }
+
+
+
+.text-md { font-size: 17px; }
+
+
+
+.text-lg { margin-right: 15px; margin-left: 15px; font-size: 23px; font-weight: 600; }
+
+.text-lg strong { font-weight: 800; }
+
+
+
+.text-stronger { font-size: 20px; font-weight: 800; }
+
+
+
+.icone-lg { margin-top: 30px; margin-bottom: 25px; }
+
+
+
+#copyright { margin: 0; padding: 17px 0; font-size: 11px; line-height: 11px; }
+
+#container-image{text-align:right;}
+
+#outros-ebooks h3{font-size: 19px;}
+
+@media (max-width: 500px) {
+
+	#chamada-principal img { margin: 30px 0 -86px 0; }
+
+                #outros-ebooks p{height: auto!important; margin-bottom:10px!important;}
+
+}
+
+
+
+@media (max-width: 369px) {
+
+                img{width:100%!important;}
+
+                img.logo{width:auto!important;}
+
+                .cta-download .cta-download-overlay img{width: auto!important;}
+
+                .navbar-brand { width: 180px; }
+
+                .navbar-toggle { margin: 10px; padding: 16px; }
+
+}
+
+
+
+@media (min-width: 992px) {
+
+	h1 { margin-top: 62px; font-size: 30px; line-height: 44px; }
+
+	h1 .arvo { font-size: 28px; }
+
+	#chamada-principal img { margin: -5px 0 -100px 0; }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+	h1 { margin: 117px 0 30px 0; font-size: 35px; line-height: 46px; }
+
+	h1 .arvo { font-size: 30px; }
+
+	#chamada-principal img { margin: -5px 0 -114px 0; }
+
+}
+
+
+
+#outros-ebooks p{margin-bottom:0; height: 48px; line-height: 18px;}
+
+
+
+.cta-download {
+
+    position: relative;
+
+    overflow: hidden;
+
+    max-width: 346px;
+
+    margin: 0 auto;
+
+}
+
+.cta-download .cta-download-overlay {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    -webkit-transition: all 0.25s ease-out;
+
+    transition: all 0.25s ease-out;
+
+}
+
+.cta-download:hover .cta-download-overlay {
+
+    opacity: 1;
+
+    -webkit-transition: all 0.25s ease-out;
+
+    transition: all 0.25s ease-out;
+
+}
+
+.cta-download > img {
+
+    width: 100%;
+
+    max-width: 345px;
+
+    height: auto;
+
+}
+
+.cta-download a {
+
+    display: table;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: url(../images/cta-overlay.png);
+
+    color: #808080;
+
+    font-family: "Merriweather";
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    line-height: 30px;
+
+    text-decoration: none;
+
+}
+
+.cta-download a div {
+
+    display: table-cell;
+
+    padding: 30px;
+
+    vertical-align: middle;
+
+}
+
+.cta-download h3 {
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+}
+
+.cta-download h4 {
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+
+    color: #FF3D00;
+
+    font-weight: 500;
+
+}
+
+
+
+.vid {
+
+    position: relative;
+
+    padding-bottom: 56.25%;
+
+    padding-top: 30px; height: 0; overflow: hidden;
+
+}
+
+
+
+.vid iframe,
+
+.vid object,
+
+.vid embed {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+footer p {
+
+  color: #A0A0A0;
+
+  margin: 10px;
+
+}
