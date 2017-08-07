@@ -106,6 +106,13 @@ $(function(){
 			} else {
 				lista.html('<p>Nenhuma novidade para exibir!</p>');
 			}
+
+			/* se a postagem for ingles, a sessão de postagens some */
+			var theLanguageArxo = $('html').attr('lang');
+			if(theLanguageArxo == "en" ) {
+			    $("#postagens").hide();
+			}
+
 		}});
 
 		function getIMGPost(id){

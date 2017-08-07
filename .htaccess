@@ -40,7 +40,7 @@ RewriteRule ^en/institutional/?$ institucional.php?idioma=en [NC,L]
 RewriteRule ^en/ideology/?$ institucional.php?ancora=ideologia&idioma=en [NC,L]
 RewriteRule ^en/rewards-and-certifications/?$ institucional.php?ancora=certificacoes&idioma=en [NC,NE,L]
 RewriteRule ^en/ideology/?$ institucional.php?ancora=ideologia&idioma=en [NC,L]
-RewriteRule ^en/clients/?$ institucional.php?ancora=clientes&idioma=br [NC,NE,L]
+RewriteRule ^en/clients/?$ institucional.php?ancora=clientes&idioma=en [NC,NE,L]
 
 RewriteRule ^(es|en)/institucional/?$ institucional.php?idioma=$1 [NC,L]
 RewriteRule ^(es|en)/ideologia/?$ institucional.php?ancora=ideologia&idioma=$1 [NC,L]

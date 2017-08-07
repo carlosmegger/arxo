@@ -110,8 +110,9 @@ $(document).ready(function () {
         <div class="central">
             <figure id="logo"><a href="./"><img src="img/logo-<?=$idioma?>.png" alt="Arxo" /></a></figure>
             <div id="bandeiras">
-                <!--a href="en/" id="en"></a-->
-                <a href="br/" id="br"></a>&nbsp;&nbsp;&nbsp;<a href="es/" id="es"></a>
+                <a href="en/" id="en"></a>&nbsp;&nbsp;&nbsp;
+                <a href="br/" id="br"></a>&nbsp;&nbsp;&nbsp;
+                <a href="es/" id="es"></a>
             </div>
             <nav>
                 <div class="mobile">
