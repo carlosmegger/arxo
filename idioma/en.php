@@ -28,7 +28,7 @@ $_links = array(
 	# novidades
 	'noticia'                 => 'en/news/en/',
 	'instituto'               => 'en/instituto/',
-	'blog'					  => 'en/blog/',
+	'blog'					  => 'blog/',
 	'revista arxo'            => 'en/newspapper-arxo/',
 	# contato
 	'fale conosco'            => 'en/fale-conosco/',
