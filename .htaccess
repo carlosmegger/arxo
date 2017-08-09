@@ -125,6 +125,12 @@ RewriteRule ^ponto-abastecimento-trr/([^/]+)/([^/]+)/?$ produtos.php?slug=ponto-
 RewriteRule ^pressurizados/?$ produtos.php?slug=pressurizados&idioma=br [NC,L]
 RewriteRule ^pressurizados/([^/]+)/([^/]+)/?$ produtos.php?slug=pressurizados&tag=$1&idproduto=$2&idioma=br [NC,L]
 
+RewriteRule ^pressure-equipment/$ /en/pressure-equipment/ [R=301,NC,L]
+RewriteRule ^pressure-equipment/([^/]+)/([^/]+)/$ /en/pressure-equipment/$1/$2/ [R=301,NC,L]
+RewriteRule ^en/pressure-equipment/?$ produtos.php?slug=pressure-equipment&idioma=en [NC,L]
+RewriteRule ^en/pressure-equipment/([^/]+)/([^/]+)/?$ produtos.php?slug=pressure-equipment&tag=$1&idproduto=$2&idioma=en [NC,L]
+
+
 # --- novidades
 RewriteRule ^noticias/(.*)$ /novidades/$1 [R=301,NC,L]
 RewriteRule ^noticia/(.*)$ /novidade/$1 [R=301,NC,L]

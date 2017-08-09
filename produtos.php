@@ -203,7 +203,7 @@
 						<textarea name="mensagem" id="mensagem" class="textarea" required placeholder="<?=$_label['mensagem']?>*" rows="5" cols="40"></textarea>
 					</span>
 					<span class="botao">
-						<input type="submit" value="ENVIAR">
+						<input type="submit" value="<?=$_label['submit']?>">
 					</span>
 				</form>
 				<span class="retorno"></span>

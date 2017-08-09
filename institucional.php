@@ -72,7 +72,7 @@
 </section>
 <section id="clientes" class="conteudo">
 	<div class="central">
-		<h1>CLIENTES</h1>
+		<h1><?=$_rotulos['clientes']?></h1>
 		<div id="lista-clientes">
 			<?
             $i = 0;
