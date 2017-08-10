@@ -110,7 +110,7 @@
 
 			$imagens = $produto->imagens();
 			if(count($imagens) > 0){
-				echo '<h2>GALERIA DE FOTOS</h2>';
+				echo ' <h2>'.$_rotulos['galeria de fotos'].'</h2>';
 				echo '<div class="galeria">';
 				echo '<div id="galeria">';
 				echo '<div class="anterior"></div>';

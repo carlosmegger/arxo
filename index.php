@@ -70,8 +70,8 @@
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td><img src="img/abieps.png" width="281" height="105"></td>
-    <td><img src="img/pei-member.png" width="200" height="74"></td>
+    <td><a href="http://www.abieps.com.br/" target="_blank"><img src="img/abieps.png" width="281" height="105"></a></td>
+    <td><a href="https://www.pei.org/" target="_blank"><img src="img/pei-member.png" width="200" height="74"></a></td>
   </tr>
   <tr>
     <td>&nbsp;</td>

@@ -46,7 +46,9 @@ var http = '<?=$http?>',
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<? if ($lang == 'es'){?>
+<? if ($lang == 'en'){?>
+    ga("create","UA-43940246-3","auto");
+<? } else if ($lang == 'es'){?>
     ga("create","UA-43940246-2","auto");
 <? } else { ?>
     ga("create","UA-43940246-1","auto");

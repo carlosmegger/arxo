@@ -31,7 +31,7 @@ $_links = array(
 	'blog'					  => 'blog/',
 	'revista arxo'            => 'en/newspapper-arxo/',
 	# contato
-	'fale conosco'            => 'en/fale-conosco/',
+	'fale conosco'            => 'en/contact/',
 	'trabalhe conosco'        => 'en/trabalhe-conosco/',
 	'representantes'          => 'en/representantes/',
 	'localizacao'             => 'en/localizacao/',
@@ -89,6 +89,7 @@ $_rotulos = array(
 	'voltar' => 'Voltar',
 	
 	# produtos
+	'galeria de fotos' => 'PHOTOS',
 	'orcamento' => 'BUDGET',
 
 );
@@ -96,16 +97,16 @@ $_textos = array(
 	'lema'                    => 'Quality and safety of a leading company',
 	'home qualidade 1'		  => 'Arxo has been investing in the quality and safety of its products since 1967. For this reason, it has become Latin America’s leader in manufacturing fuel storage tanks. Its work goes beyond turning raw material into a great product. The challenge is to create the best solution for your business.',
 	'home qualidade 2'		  => 'Nosso trabalho vai além de transformar a matéria-prima em um grande produto, nosso desafio é transformá-la na melhor solução para o seu negócio.',
-	'home qualidade 3'		  => 'Uma empresa que coloca qualidade e segurança em tudo que faz.',
-	'contato'                 => 'Entre em contato conosco utilizando o formulário abaixo:',
-	'trabalhe conosco'        => 'Envie seu currículo utilizando o formulário abaixo:',
+	'home qualidade 3'		  => 'A company that invests in quality and safety in everything it does',
+	'contato'                 => 'Contact us, use the form below:',
+	'trabalhe conosco'        => 'Send your resume using the form below:',
 	'obrigatorios'            => '* All fields are required.',
 	'copyright'               => 'All rights reserved. ',
-	'envio contato_sucesso'   => 'Prezado(a) <strong>[nome]</strong>, sua mensagem foi enviada com sucesso.',
-	'envio erro'              => 'Prezado(a) <strong>[nome]</strong>, ocorreu um erro ao enviar o formulário.',
-	'envio curriculo_sucesso' => 'Prezado(a) <strong>[nome]</strong>, seu currículo foi enviado com sucesso.',
+	'envio contato_sucesso'   => 'Dear <strong>[nome]</strong>, your message has been sent successfully.',
+	'envio erro'              => 'Dear <strong>[nome]</strong>, an error occured when submitting the form.',
+	'envio curriculo_sucesso' => 'Dear <strong>[nome]</strong>, your resume was successfully submitted.',
 	'noticia vazia'           => 'Ainda não há nenhuma notícia aqui!',
-	'localizacao'			 => 'A ARXO possui representantes que atuam em todas as regiões do Brasil. Além disso, vem conquistando cada vez mais espaço no Mercado Internacional, atendendo também países da América Latina. Dessa forma, agiliza as negociações e leva segurança com um representante perto de você.',
+	'localizacao'			 => 'ARXO has representatives that work in all regions of Brazil. In addition, it has been gaining more space in the international market, also serving Latin American countries. That way, streamline the negotiations and take security with a representative near you.',
 
 	'orcamento retorno tit' => 'Budget sent successfully!',
 	'orcamento retorno txt' => 'Thank you for your contact, soon our team will contact you with more information.',

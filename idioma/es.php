@@ -88,6 +88,7 @@ $_rotulos = array(
 	'voltar' => 'Voltar',
 	
 	# produtos
+	'galeria de fotos' => 'GALERIA DE FOTOS',
 	'orcamento' => 'PRESUPUESTO',
 
 );
