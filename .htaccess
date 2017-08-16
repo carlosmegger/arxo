@@ -257,6 +257,9 @@ RewriteRule ^busca/([^/]+)/([\d]+)/?$ busca.php?idioma=br&busca=$1&pagina=$2 [NC
 RewriteRule ^(en|es)/busca/?$ busca.php?idioma=$1 [NC,L]
 RewriteRule ^(en|es)/busca/([^/]+)/([\d]+)/?$ busca.php?idioma=$1&busca=$2&pagina=$3 [NC,L]
 
+# --- videos
+RewriteRule ^videos/?$ videos.php?idioma=br [NC,L]
+
 # --- ajax
 RewriteRule ^lista_representantes$ ajax/ajax.php?acao=listaRepresentantes [NC,L]
 RewriteRule ^enviar_orcamento$ ajax/ajax.php?acao=orcamento [NC,L]

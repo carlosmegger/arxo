@@ -1,0 +1,210 @@
+@media screen and (max-width : 480px){
+.col-videos{float: none; margin:auto; width:300px;}
+}
+
+@media screen and (min-width : 480px){
+
+	#descricao-home { padding:32px 0; }
+	#descricao-home strong { font-size:24px; }
+	#descricao-home .colunas span { font-size:16px; }
+	#descricao-home p { font-size:16px }
+
+	#novidades-home figure { max-width:200px; float:left; margin:0 10px 10px 0; }
+
+	/* portais */
+	.portais-lista > a { width:50%; vertical-align:top }
+
+	/* revistas */
+	.revista-lista > div { width:50%; vertical-align:top }
+
+	/* Linha do tempo */
+	#tempo > div > div:before { content:''; width:100%; height:3px; background-color:#049dfd; position:absolute; z-index:1; top:11px; left:0; }
+	#linha-tempo span { font-size:14px; }
+
+	/*video*/
+	.col-videos{float: none; margin:auto; width:400px;}
+
+	/* Forms */
+	.contato .duas-colunas { margin-bottom:8px; display:-webkit-flex; -webkit-align-items:center; display:-ms-flex; -ms-align-items:center; display:flex; align-items:center; }
+	.contato .duas-colunas > span { -webkit-flex:1; -ms-flex:1; flex:1; margin-bottom:0; }
+	.contato .duas-colunas > span + span { margin-left:8px; }
+
+}
+@media screen and (min-width : 640px){
+
+	.telefones { position:absolute; top:18px; right:0; margin:0 }
+
+	/*  */
+	#topo { height:40px; }
+	#topo > div { height:40px; display:-webkit-flex; -webkit-justify-content:space-between; -webkit-align-items:center;  display:-ms-flex; -ms-justify-content:space-between; -ms-align-items:center; display:flex; justify-content:space-between; align-items:center; }
+	#topo > div span:first-child { -webkit-flex:1; flex:1; }
+	#topo span { display:inline-block; }
+	#topo span:first-child { text-align:left; }
+
+	#banner { width:100%; position:relative; display:block; }
+	#banner figure { width:100%; height:100%; text-align:center; }
+	#banner figure img { max-height:100%; max-width:100%; }
+	#banner-nav { z-index:150; display:-webkit-flex; -webkit-justify-content:center; display:-ms-flex; -ms-justify-content:center; display:flex; justify-content:center; position:absolute; bottom:30px; left:50%; }
+	#banner-nav > span { width:15px; height:15px; cursor:pointer; background-color:#fff; border-radius:8px; }
+	#banner-nav > span + span { margin-left:3px; }
+	#banner-nav > span.cycle-pager-active { background-color:#ccc; }
+
+	#postagens { padding:40px 0 }
+	#postagens h1 { font-size:36px; line-height:36px; margin-bottom:40px }
+	#postagens .lista > div { margin-bottom:40px }
+	#postagens .lista > div figure { /*width:auto;*/ width:272px; margin:0 20px 0 0; float:left }
+	#postagens .lista > div > div { width:51%; float:left }
+	#postagens .lista > div > div h2 { font-size:30px; line-height:30px; margin-bottom:15px }
+	#postagens .lista > div > div p a.more-link { margin-top:25px }
+	/*#postagens .lista > div > div > a.continue-lendo { margin-top:25px }*/
+	#postagens a.mais-novidades { margin-top:40px }
+
+	#descricao-home { padding:40px 0 }
+	#descricao-home strong { font-size:30px; margin:20px 0; }
+	#descricao-home .colunas { display:-webkit-flex; display:-ms-flex; display:flex; margin:40px 0 30px; }
+	#descricao-home .colunas span { font-size:18px; margin-bottom:0; }
+	#descricao-home .colunas span + span { margin-left:50px; }
+	#descricao-home p { font-size:18px }
+
+	#novidades-home article { float:left; width:49%; margin-bottom:0; }
+	#novidades-home article + article { margin-left:2%; }
+
+	#rodape .coluna + .coluna { margin:0 0 0 2%; padding-left:2%; border-left:solid 1px #0093d8; }
+
+	/* portais */
+	.portais-lista > a { width:33% }
+
+	/* revistas */
+	.revista-lista > div { width:33% }
+
+	/* institucional */
+	#linha-tempo span { font-size:16px; }
+	#lista-certificacoes li { float:left; width:50%; }
+	#lista-certificacoes li:nth-child(2n+1) { clear:both; }
+
+	/*videos*/
+	.col-videos{float: none; margin:auto; width:600px;}
+
+	/* Produtos */
+	.header-produtos h1:before { content:''; background:rgba(255,255,255,0.30); height:100%; width:500%; position:absolute; right:41px; top:0; }
+	.header-produtos h1:after { content:''; background:url('../img/grafismo.png') no-repeat left center; position:absolute; right:0; top:0; width:41px; height:100%; }
+
+	.header-produtos h1 { font:700 48px/68px "TitilliumWeb"; }
+
+	.header-produtos-detalhe .titulo::before { background-color: rgba(255, 255, 255, 0.3); content: ""; height: 100%; left: -100%; position: absolute; top: 0; width: 100%; }
+	.header-produtos-detalhe .titulo { background:url('../img/grafismo-2.png') no-repeat right center; }
+	.header-produtos-detalhe .titulo h1 { font:700 48px/1 "TitilliumWeb"; }
+	.header-produtos-detalhe .titulo h2 { font:36px/48px 'TitilliumWeb'; }
+
+	#form-orcamento { box-sizing:border-box; overflow:hidden; }
+	#form-orcamento * { box-sizing:border-box; }
+	#form-orcamento span.linha { margin-right:0; margin-top:5px; display:-webkit-flex; -webkit-flex-direction:row; display:-ms-flex; -ms-flex-direction:row; display:flex; flex-direction:row; }
+	#form-orcamento span.linha:first-child { margin-top:0; }
+	/*#form-orcamento span.linha .input { width:auto; flex:1; }*/
+	#form-orcamento span.linha .input { width:50%; flex:1; }
+	#form-orcamento span.linha .input + .input { margin-left:5px; }
+	#form-orcamento span.coluna { float:left; width:50%; height:131px; }
+	#form-orcamento span.mensagem { float:right; width:49%; margin:0 0 0 1%; }
+	#form-orcamento span.botao { width:302px; float:right; margin-top:10px; }
+	#form-orcamento .input:first-child { margin-bottom:0; }
+	#form-orcamento .input { width:100%; }
+	#form-orcamento .textarea { width:100%; height:131px; vertical-align:top; }
+	#form-orcamento input[type=submit] { font:700 20px/45px 'TitilliumWeb'; width:100%; height:53px; /*height:131px*/ }
+	/*.g-recaptcha iframe { display:block; margin:0 0 5px; }*/
+	#form-orcamento input[name=titulo] { margin-bottom:5px !important; }
+
+	.item-noticia figure { float:left; margin:0 20px 20px 0; }
+
+	.coluna-representante { float:left; width:48%; }
+	.coluna-representante + .coluna-representante { margin-left:4%; }
+}
+@media screen and (min-width : 768px){
+
+	#lista-produtos a { display:block; float:left; }
+	#tempo > div > div:before { top:23.5px; }
+	#linha-tempo span { width:50px; height:50px; line-height:50px; padding:0; border-radius:25px; transition:all 0.3s ease; }
+
+	aside { float:right; width:28%; margin-bottom:0; }
+	aside nav { padding:20px; }
+	aside nav + nav { margin-top:25px; }
+	aside + section { float:left; width:70%; }
+
+	/*
+	#mapa_mundi { display:block; }
+	#mapa_america { display:none; }
+	*/
+	#titulo_popup { height:30px; }
+	
+	/* produto */
+	#produto .botao-orcamento { width:25%; margin-bottom:20px; margin-left:25px; margin-top:25px; float:right }
+	#rodape { margin-top:0; }
+
+	#form-orcamento { width:100% }
+	#form-orcamento .relacionados { width:100% }
+	#form-orcamento .relacionados h2 { margin-bottom:12px }
+	#form-orcamento .relacionados > div label { display:inline-block; width:50%; vertical-align:top }
+	#form-orcamento .relacionados > div label:nth-child(2n+0){ width:49%; margin:0 0 0 1% }
+	#form-orcamento .relacionados > div label span { width:95% }
+
+	/* home */
+	#postagens .lista > div > div { width:59.5% }
+
+}
+@media screen and (min-width : 860px){
+
+	header nav { clear:right; float:right; margin-bottom:0; }
+	.mobile { display:none; }
+	.desktop { display:block; }
+
+	.conteudo .right { float:right; margin:0 0 10px 10px; }
+
+	.header-produtos h1 { font:700 56px/76px "TitilliumWeb"; }
+	.header-produtos-detalhe .titulo h1 { font:700 56px/1 "TitilliumWeb"; }
+	.header-produtos-detalhe .titulo h2 { font:48px/60px 'TitilliumWeb'; }
+
+	/* home */
+	#postagens .lista > div > div { width:64.2% }
+
+}
+@media screen and (min-width : 960px){
+
+	.central { padding:0 }
+
+	#chamadas { margin:55px auto; display:-webkit-flex; display:-ms-flex; display:flex; }
+	#chamadas a { flex:1; margin-bottom:0; margin-right:0; }
+
+	#postagens .lista > div > div { width:668px }
+	#postagens .lista > div > div p { line-height:24px }
+
+	#lista-produtos > div a { margin:0 0 38px 38px; width:calc((100% / 3) - (76px / 3)); }
+	#lista-produtos > div a:nth-child(3n+1) { margin-left:0; clear:both; }
+
+	#descricao-home { padding:52px 0; }
+	#descricao-home strong { font-size:35px; }
+	#descricao-home .colunas span { font-size:20px; }
+	#descricao-home p { font-size:25px }
+
+	#rodape > .central { display:-webkit-flex; display:-ms-flex; display:flex; padding:24px 0; }
+	#rodape .coluna + .coluna { margin-left:13px; padding-left:13px; border-left:solid 1px #0093d8; }
+
+	/* revistas */
+	.revista-lista > div { width:25% }
+	.header-produtos-detalhe figure { margin-top:30px; }
+
+	/*videos*/
+	.col-videos{float: left; margin-bottom: 20px; width:480px;}
+
+	/* produtos */
+	#form-orcamento .relacionados { margin-bottom:15px }
+	#form-orcamento .relacionados > div label { margin-bottom:5px }
+
+}
+@media screen and (min-width : 1280px){
+
+	/* produto */
+	#produto .botao-orcamento { display:none }
+	
+	.orcamento-suspenso { display:block; position:fixed; width:auto; height:auto; top:480px; right:0; z-index:998 }
+	.orcamento-suspenso img { vertical-align:middle }
+
+}

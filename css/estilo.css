@@ -1,0 +1,447 @@
+@font-face {
+	font-family: 'TitilliumWeb';
+	src: url('fontes/TitilliumWeb-Regular.eot') format('eot');
+	src: url('fontes/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fontes/TitilliumWeb-Regular.woff') format('woff'),
+		 url('fontes/TitilliumWeb-Regular.ttf') format('truetype'),
+		 url('fontes/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'TitilliumWeb';
+	src: url('fontes/TitilliumWeb-Bold.eot') format('eot');
+	src: url('fontes/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fontes/TitilliumWeb-Bold.woff') format('woff'),
+		 url('fontes/TitilliumWeb-Bold.ttf') format('truetype'),
+		 url('fontes/TitilliumWeb-Bold.svg#TitilliumWeb-Bold') format('svg');
+	font-weight:700;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'TitilliumWeb';
+	src: url('fontes/TitilliumWeb-Light.eot') format('eot');
+	src: url('fontes/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+		 url('fontes/TitilliumWeb-Light.woff') format('woff'),
+		 url('fontes/TitilliumWeb-Light.ttf') format('truetype'),
+		 url('fontes/TitilliumWeb-Light.svg#TitilliumWeb-Light') format('svg');
+	font-weight:100;
+	font-style:normal;
+}
+
+* { border:none; margin:0; padding:0; box-sizing:border-box; }
+body { font:16px/1.2 'TitilliumWeb',Arial; color:#444; }
+html { overflow-x:hidden }
+
+label { display:inline-block; font-family:Arial; font-weight:500; font-size:1.3em; color:#0b3e5e }
+textarea { overflow:auto }
+fieldset { border:none }
+input,
+textarea,
+select { font:13px/1 'TitilliumWeb',Arial; color:#000; border:#fff 1px solid; outline:none }
+textarea { resize:none }
+.cursor { cursor:pointer }
+hr { display:block; width:100%; height:3px; border:none; background:url(../img/barra.png) center no-repeat; margin:20px 0 }
+
+textarea.erro,
+input.erro { border:#d00 1px solid !important }
+
+.fundo-erro { color:#d00 }
+.fundo-sucesso { color:#060 }
+
+/* gerais */
+div,section { position:relative }
+h1 { position:relative }
+a { outline:0 }
+.central { width:100%; height:auto; margin:0 auto; max-width:960px; padding:0 20px; }
+.clear { clear:both }
+figure { display:block; margin:0; max-width:100%; padding:0; }
+figure img { max-width:100%; vertical-align:top; }
+
+*::-webkit-input-placeholder { color:#000; opacity:1 }
+*:-moz-placeholder { color:#000; opacity:1 }
+*::-moz-placeholder { color:#000; opacity:1 }
+*:-ms-input-placeholder { color:#000; opacity:1 }
+
+*:focus::-webkit-input-placeholder { color:transparent !important; }
+*:focus:foplaceholder { color:transparent }
+*:focus:-moz-placeholder { color:transparent !important; }
+*:focus:fo{ color:transparent !important }
+*:focus::-moz-placeholder { color:transparent !important; }
+*:focus:fo{ color:transparent !important }
+*:focus:-ms-input-placeholder { color:transparent !important; }
+*:focus:foplaceholder { color:transparent }
+
+.telefones { width:auto; height:auto; overflow:hidden; margin-bottom:20px; text-align:right }
+.telefones p { font-size:22px; color:#1d398e; text-transform:uppercase; line-height:22px; margin:0 0 5px 0 !important }
+.telefones p:last-child { margin:0 !important }
+.telefones p span { display:inline-block; color:#088ecd; margin-left:10px }
+
+/* topo */
+#topo { background-color:#164ea3; color:#dae0ea; font:16px/40px 'TitilliumWeb'; }
+#topo a { color:#dae0ea; font-size:12px; vertical-align:top; text-decoration:none }
+#topo span { display:none }
+#topo span:first-child { display:block; text-align:center; }
+
+.menu { position:relative; line-height:27px; padding:5px; }
+.submenu { display:none; position:absolute; right:0; top:43px; z-index:101; padding:0; background-color:#fff; box-shadow:0 2px 4px #999; }
+.submenu a { white-space:nowrap; display:block; padding:6px 10px; line-height:1em; background-color:#fff; }
+.contato .submenu { right:0; }
+.submenu:before { content:''; background-color:#fff; position:absolute; top:-5px; left:50%; margin-left:-5px; z-index:-1; border:solid 1px #EAE8E8; width:10px; height:10px; transform:rotate(45deg); }
+.contato .submenu:before { left:inherit; right:0; margin-right:42.5px; }
+#menu-mobile { width:100%; background-color:#ccc; }
+#menu-mobile optgroup { margin:10px 0; font-style:normal; }
+#menu-mobile option { margin-left:10px; }
+
+.midias { display:-webkit-flex; display:-ms-flex; display:flex; width:auto; margin-left:30px; }
+.midias a { width:27px; height:22px; margin:9px 0; display:inline-block; background:url('../img/redes_sociais.png') no-repeat left top; }
+.midias a + a { margin-left:3px; }
+
+.midias .facebook { background-position:0px top; }
+.midias .twitter { background-position:-28px top; }
+.midias .linkedin { background-position:-56px top; }
+.midias .gplus { background-position:-84px top; }
+.midias .youtube { background-position:-112px top; }
+.midias .facebook:hover { background-position:0px bottom; }
+.midias .twitter:hover { background-position:-28px bottom; }
+.midias .linkedin:hover { background-position:-56px bottom; }
+.midias .gplus:hover { background-position:-84px bottom; }
+.midias .youtube:hover { background-position:-112px bottom; }
+
+#logo { float:left; margin:20px 20px 20px 0; }
+
+#bandeiras { display:-webkit-flex; -webkit-flex-flow:row nowrap; -webkit-justify-content:space-between; display:-ms-flex; -ms-flex-flow:row nowrap; -ms-justify-content:space-between; display:flex; flex-flow:row nowrap; justify-content:space-between; width:auto; margin:20px 0; float:right; text-align:right }
+#bandeiras a { background:url('../img/flags.png') no-repeat left; width:16px; height:11px; display:inline-block; }
+#bandeiras #en { background-position:  0px top; }
+#bandeiras #br { background-position:-23px top; }
+#bandeiras #es { background-position:-46px top; }
+#lupa { cursor:pointer; vertical-align:middle; }
+
+header nav { clear:both; position:relative; margin-bottom:10px; }
+header nav a { font-size:17px; line-height:27px; color:#008bd2; text-decoration:none; transition:color 0.3s ease; }
+header nav a:hover { color:#ee7003; }
+header nav a.ativo { color:#ee7003; font-weight:bold; }
+header nav .submenu a { padding:8px; text-transform:uppercase; }
+
+#form_busca { position:absolute; top:27px; right:0; z-index:100; display:none; }
+#form_busca.visible { display:-webkit-flex; display:-ms-flex; display:flex; }
+#form_busca input[type="text"] { border:solid 1px #008bd2; color:#008bd2; height:20px; vertical-align:top; padding:1px 3px; }
+#form_busca input[type="submit"] { border:none; height:20px; width:30px; font:10px/1 Arial; vertical-align:top; background-color:#008bd2; color:#fff; }
+
+.mobile { display:block; }
+.desktop { display:none; }
+
+/* index */
+#banner { display:none; }
+
+#chamadas { margin:55px auto 0 auto; text-align:center; }
+#chamadas a { display:inline-block; margin-right:8px; vertical-align:top; width:240px; margin-bottom:8px; cursor:pointer; text-decoration:none; background-color:#f2f2f2; color:#008bd2; }
+#chamadas a:nth-child(2n) { background-color:#e8e8e8; }
+#chamadas a:last-child { margin-bottom:0 }
+#chamadas a img { vertical-align:top; }
+#chamadas a h2 { padding:22px 30px 10px 25px; color:#1d3a8f; text-transform:uppercase; font-size:18px; line-height:1em; }
+#chamadas a p { padding:0 30px 22px 25px; margin-right:10px; font-size:14px; background:url('../img/seta-chamada.png') no-repeat right top; }
+#chamadas a:hover { color:#fff; background-color:#049dfd; }
+#chamadas a:hover h2 { color:#fff; }
+#chamadas a:hover p { background:url('../img/seta-chamada-hover.png') no-repeat right top; }
+
+#postagens { width:auto; height:auto; background:#f8f8f8; padding:20px 0; overflow:hidden }
+#postagens h1 { font-size:28px; line-height:28px; color:#1c3683; text-transform:uppercase; /*margin-bottom:40px;*/ margin-bottom:20px }
+#postagens .lista { width:auto; height:auto; overflow:hidden }
+#postagens .lista > p { color:#444; line-height:22px; text-align:justify }
+#postagens .lista > div { width:auto; height:auto; margin-bottom:20px; overflow:hidden }
+#postagens .lista > div:last-child { margin-bottom:0 }
+#postagens .lista > div figure { width:auto; height:auto; margin-bottom:10px }
+#postagens .lista > div figure img { max-width:100%; height:auto }
+#postagens .lista > div > div { width:auto; height:auto; overflow:hidden }
+#postagens .lista > div > div h2 { font-size:24px; line-height:24px; text-transform:uppercase; margin-bottom:10px }
+#postagens .lista > div > div h2 a { color:#2d98e0; text-decoration:none }
+#postagens .lista > div > div p { line-height:22px; text-align:justify }
+#postagens .lista > div > div p a { color:#444; text-decoration:none }
+#postagens .lista > div > div p a.more-link { display:block; color:#353338; line-height:15px; text-decoration:none; text-transform:uppercase; text-align:right; letter-spacing:0.2px }
+#postagens .lista > div > div p a.more-link:hover { text-decoration:underline }
+#postagens a.mais-novidades { display:block; width:auto; height:auto; margin-top:20px; font-size:24px; line-height:24px; color:#2d98e0; font-weight:bold; text-decoration:none; text-transform:uppercase; text-align:right }
+#postagens a.mais-novidades:hover { color:#1c3683 }
+
+#descricao-home { padding:24px 0; color:#fff; background:url('../img/fundo-desc-home.jpg') /*no-repeat*/ repeat center top; }
+#descricao-home strong { display:block; text-align:center; margin:0 0 20px; font:700 24px/1em 'TitilliumWeb'; }
+#descricao-home .colunas { margin:40px 0 30px; display:block; }
+#descricao-home .colunas span { font:16px/1.5 'TitilliumWeb'; text-align:justify; text-transform:uppercase; display:block; margin-bottom:1em; }
+#descricao-home p { font:16px/30px 'TitilliumWeb'; text-align:center; text-transform:uppercase; }
+
+#novidades-home { overflow:hidden; }
+#novidades-home h1 { margin:60px 0 30px; font:700 24px/1 'TitilliumWeb'; color:#1d3a8f; height:24px; display:block; position:relative; }
+#novidades-home h1:after { content:''; width:100%; background-color:#dff0f9; height:24px; display:inline-block; vertical-align:top; position:absolute; left:130px; top:0; }
+#novidades-home article { margin-bottom:1em; overflow:hidden; }
+#novidades-home figure { max-width:100%; margin:0 auto 10px; text-align:center; }
+#novidades-home h2 { font:700 16px/1.1 'TitilliumWeb'; color:#1d3a8f; }
+#novidades-home h2 a { color:#1d3a8f; text-decoration:none }
+#novidades-home time { font:11px/1.5 'TitilliumWeb'; color:#464646; }
+#novidades-home p { font:13px/1.2 'TitilliumWeb'; }
+#novidades-home p a { color:#444; text-decoration:none }
+.leia-mais { color:#fff; background-color:#049dfd; text-decoration:none; text-transform:uppercase; padding:8px; cursor:pointer; display:block; float:right; margin:10px 0 0; font-size:12px; }
+
+/* Conteúdo */
+.conteudo { overflow:hidden; }
+.conteudo h1 { margin:15px 0 40px; font:700 35px/1 'TitilliumWeb'; color:#1d3a8f }
+.conteudo h2 { color:#1d3a8f }
+.conteudo h3 { color:#1d3a8f }
+.conteudo p { margin:1em 0 }
+.conteudo p a { color:#444; text-decoration:underline }
+.conteudo > figure { float:left; margin:0 20px 20px 0 }
+.conteudo .right { text-align:center; margin:10px auto; }
+
+.conteudo ul { list-style:square; list-style-position:inside; padding-left:5px }
+.conteudo ul li { line-height:20px }
+
+.conteudo .voltar { display:inline-block; color:#fff; background-color:#049dfd; text-decoration:none; text-transform:uppercase; padding:8px; cursor:pointer; margin:10px 0 0; font-size:12px; }
+
+iframe { display:block; margin:30px auto; max-width:100%; }
+.breadcrumb { font:13px/1 'TitilliumWeb'; color:#fff; padding:18px 0; background-color:#049dfd; margin-bottom:25px }
+.breadcrumb a { color:#fff; text-decoration:none; text-transform:uppercase }
+.breadcrumb a:hover { text-decoration:underline }
+.centraliza { text-align:center; margin-top:30px }
+.fancybox-prev span, .fancybox-next span { background-color:#fff; border-radius:20px; box-shadow:0 0 5px #fff; }
+
+/* Institucional */
+#ideologia { padding:30px 0; }
+#veryx { padding:30px 0; }
+#certificacoes { padding:30px 0; background-color:#f1f1f1; }
+#certificacoes h1 { text-align:center }
+
+#clientes { padding:30px 0 }
+#clientes h1 { text-align:center }
+
+#lista-clientes .item { display:block; width:100%; }
+#lista-clientes .item span { display:inline-block; width:25%; float:left; text-align:center }
+#lista-clientes .item img { max-width:100%; }
+
+#lista-clientes .navegacao { width:100%; height:auto; margin-top:25px; text-align:center }
+#lista-clientes .navegacao > span { display:inline-block; width:10px; height:10px; background:#898989; margin:0 2.5px; text-indent:-5000px; border-radius:50%; cursor:pointer }
+#lista-clientes .navegacao > span.cycle-pager-active { background:#ee7003 }
+
+/* linha do tempo */
+#tempo { background-color:#13338d; padding:30px 0; color:#fff; }
+#tempo h1 { color:#fff; text-align:center; }
+#tempo > div > div { position:relative; width:100% }
+#linha-tempo { margin:0 0 20px; padding:0; display:-ms-flex; -ms-align-items:center; -ms-justify-content:space-between; display:-webkit-flex; -webkit-align-items:center; -webkit-justify-content:space-between; display:flex; align-items:center; justify-content:space-between; position:relative; }
+#linha-tempo span { cursor:pointer; z-index:2; font-weight:bold; text-align:center; display:inline-block; background-color:#fff; color:#13338d; padding:3px 5px; font-size:12px; }
+#linha-tempo span:hover { background-color:#74C9FF; color:#3158C7; }
+#linha-tempo span.ativo { background-color:#049dfd; color:#fff; }
+
+#evento_linha { width:auto; height:auto; text-align:center }
+#evento_linha div { width:100%; text-align:center; margin:15px 0 }
+#evento_linha div figure { width:auto; height:auto; text-align:center }
+#evento_linha div figure img { max-width:100%; height:auto; vertical-align:middle }
+#evento_linha div p { margin:15px 0 }
+
+/* produtos */
+.header-produtos { margin-top:-25px }
+.header-produtos h1 { margin:0; padding:32px 2em 32px 0; font:700 32px/52px 'TitilliumWeb'; color:#fff; position:relative; display:inline-block; }
+
+.header-produtos-detalhe { width:100%; height:270px; margin-top:-25px }
+.header-produtos-detalhe .sombra { position:absolute; width:100%; height:35px; left:0; top:0; background:url(../img/fundo-tit-produto.png) repeat-x }
+.header-produtos-detalhe .titulo { width:465px; height:270px; padding:50px 0 32px 0; z-index:1; float:left }
+.header-produtos-detalhe .titulo h1 { position:relative; display:block; margin:0; font:700 36px/1em 'TitilliumWeb'; color:#fff; }
+.header-produtos-detalhe .titulo h2 { font:24px/36px 'TitilliumWeb'; color:#fff }
+.header-produtos-detalhe figure { width:auto; height:auto; margin-top:-130px; float:right; z-index:100; position:relative; }
+.header-produtos-detalhe figure img { max-width:100%; height:auto; vertical-align:middle }
+
+.header-produtos-detalhe.reduzido { height:140px }
+.header-produtos-detalhe.reduzido .titulo { width:auto; height:auto; padding:40px 40px 40px 0; background-position:right top }
+
+#produto img { max-width:100%; height:auto !important; vertical-align:middle }
+#produto .banner-produto { width:auto; height:auto; margin:20px 0; float:none }
+#produto .banner-produto img { max-width:100%; height:auto; vertical-align:middle }
+
+#produto h1 { margin-bottom:20px }
+
+#produto .botao-orcamento { width:auto; height:auto; overflow:hidden; margin-top:25px; text-align:center; border-radius:5px }
+#produto .botao-orcamento a { color:#fff; text-decoration:none }
+#produto .botao-orcamento span { display:block; width:auto; height:auto; padding:8px 0; line-height:16px }
+#produto .botao-orcamento span.um { background:#0e3a8b; border-bottom:#0570b9 2px solid }
+#produto .botao-orcamento span.dois { background:#17479e; text-transform:uppercase }
+
+.orcamento-suspenso { display:none }
+
+#lista-produtos { text-align:center; }
+#lista-produtos h1 { margin:15px 0 40px; font:35px/1 'TitilliumWeb'; color:#1d3a8f; text-transform:uppercase; text-align:center }
+#lista-produtos > div a { display:inline-block; text-decoration:none; margin:0 10px 10px 0; }
+#lista-produtos > div a figure { text-align:center; }
+#lista-produtos > div a img { vertical-align:top }
+#lista-produtos > div a div { color:#1d3a8f; font:700 18px/20px 'TitilliumWeb'; text-align:center; padding:6px }
+
+.downloads { width:100%; margin-bottom:25px }
+#lista-download { margin:1em 0 }
+.galeria { width:100%; overflow:hidden; }
+.downloads .item-download { display:block; text-decoration:none; margin-bottom:10px; padding-left:15px; background:url('../img/ico-download.png') no-repeat left center; font:16px/1em 'TitilliumWeb'; color:#444444; }
+.downloads .item-download:hover { text-decoration:underline }
+
+.orcamento { width:100%; margin-top:25px }
+/*#form-orcamento { margin:1em 0; overflow:hidden }*/
+#form-orcamento { margin:5px 0 1em 0; overflow:hidden }
+#form-orcamento span { display:block; margin-bottom:5px; vertical-align:middle; }
+#form-orcamento span.botao { width:100%; margin-right:0; }
+#form-orcamento .input { width:100%; padding:10px; line-height:20px; box-shadow:0 0 2px 0px #458AB4 inset; background-color:#e5f5ff; color:#6f7477; border:none; transition:all 0.3s ease; }
+#form-orcamento .input:first-child { margin-bottom:5px; }
+#form-orcamento .uppercase { text-transform:uppercase }
+#form-orcamento .mensagem { margin-bottom:5px; }
+#form-orcamento .textarea { width:100%; height:100%; padding:10px; line-height:20px; box-shadow:0 0 2px 0px #458AB4 inset; background-color:#e5f5ff; color:#6f7477; border:none; transition:all 0.3s ease; }
+#form-orcamento .input:focus,
+#form-orcamento .textarea:focus { background-color:#cce6f5 }
+
+#form-orcamento input[type=submit] { font:700 20px/45px 'TitilliumWeb'; border:none; width:100px; background:#17479e; color:#fff; padding:0; text-align:center; cursor:pointer; }
+#form-orcamento input[type=submit][disabled] { background-color:#9d9d9d; cursor:default; cursor:not-allowed; }
+.orcamento .retorno { width:100%; line-height:22.5px; font-weight:bold; padding:0; margin:10px 0 0 0; color:#bb0e0e; text-align:center }
+.orcamento .retorno.sucesso { color:#090 }
+
+#form-orcamento input[name=empresa] { margin-bottom:0 !important }
+#form-orcamento .relacionados { width:auto; height:auto; margin-bottom:10px; overflow:hidden }
+#form-orcamento .relacionados h2 { font-size:20px; line-height:20px; color:#1d3a8f; text-transform:uppercase; margin-bottom:10px; }
+#form-orcamento .relacionados p { margin:0 0 5px 0 }
+#form-orcamento .relacionados > div { width:auto; height:auto; overflow:hidden }
+#form-orcamento .relacionados > div label { display:block; width:auto; height:auto; margin-bottom:3px; font:15px/18px 'TitilliumWeb',Arial; color:#444 }
+#form-orcamento .relacionados > div label:last-child { margin-bottom:0 }
+#form-orcamento .relacionados > div label input[type=checkbox] { display:inline-block; vertical-align:middle }
+#form-orcamento .relacionados > div label span { display:inline-block; width:92%; vertical-align:middle; margin:0 }
+
+/* novidades */
+aside { margin-bottom:20px; }
+aside nav { padding:10px; background-color:#f1f1f1 }
+aside nav + nav { margin-top:15px; }
+aside nav h2 { color:#1d3a8f; font:20px/1.2 'TitilliumWeb'; margin-bottom:20px; }
+aside nav a { text-decoration:none; color:#000; font:14px/1 'TitilliumWeb'; margin-bottom:10px; display:block; }
+aside nav a:hover { text-decoration:underline; }
+aside nav a:before { content:'> '; display:inline-block; margin-right:3px; color:#000; font:14px/1 'TitilliumWeb'; }
+
+.item-noticia { overflow:hidden; margin-bottom:20px; }
+.item-noticia figure { margin:0 auto 20px; text-align:center; }
+.item-noticia h2 { font:700 16px/1.1 'TitilliumWeb'; color:#1d3a8f }
+.item-noticia h2 a { color:#1d3a8f; text-decoration:none }
+.item-noticia time { font:11px/1.5 'TitilliumWeb'; color:#464646 }
+.item-noticia p { font:15px/1.2 'TitilliumWeb'; }
+.item-noticia p a { color:#444; text-decoration:none }
+.item-noticia .leia-mais { clear:both }
+#detalhe-noticia { overflow:hidden; margin-bottom:20px }
+#detalhe-noticia figure { float:left; margin:0 10px 10px 0 }
+#detalhe-noticia time { display:inline-block; font:12px/1.5 "TitilliumWeb"; color:#464646; margin-bottom:5px }
+#detalhe-noticia p { font:15px/1.2 'TitilliumWeb'; }
+#detalhe-noticia p a { color:#444 }
+#detalhe-noticia figure + div p { margin-top:0 }
+#galeria { margin:20px; position:relative; height:220px }
+#galeria .anterior { z-index:2; height:100%; width:20px; position:absolute; top:0; left:-20px; cursor:pointer; background:url('../img/seta-esq.png') no-repeat center center #2e59a8; }
+#galeria .proxima { z-index:2; height:100%; width:20px; position:absolute; top:0; right:-20px; cursor:pointer; background:url('../img/seta-dir.png') no-repeat center center #2e59a8; }
+#galeria .anterior:hover,#galeria .proxima:hover { background-color:#4D72B5; }
+#miniaturas { position:absolute; top:0; left:0; white-space:nowrap; min-width:100%; z-index:1; transition:left 0.3s ease; }
+#miniaturas img {vertical-align: top; }
+#miniaturas a { background-color:#fff; transition:all 0.3s ease; opacity:0.5; cursor:pointer; vertical-align:top; display:inline-block; }
+#miniaturas a:hover { opacity:1; }
+
+/* Certificações */
+#lista-certificacoes li { position:relative; padding:0 20px; margin-bottom:10px; list-style:none; }
+#lista-certificacoes li:before { content:''; height:10px; width:12px; background:url('../img/check.png') no-repeat left center; position:absolute; left:0; top:7px; }
+
+/* Contato */
+.contato *::-webkit-input-placeholder { color:#929aa0; opacity:1 }
+.contato *:-moz-placeholder { color:#929aa0; opacity:1 }
+.contato *::-moz-placeholder { color:#929aa0; opacity:1 }
+.contato *:-ms-input-placeholder { color:#929aa0; opacity:1 }
+.contato .uma-coluna { margin-bottom:8px; display:block; position:relative; }
+.contato .duas-colunas span { margin-bottom:8px; display:block; }
+.contato input,.contato select,.contato textarea { width:100%; background-color:#e5f5ff; border-color:#e5f5ff; color:#444444; font:14px/24px 'TitilliumWeb'; padding:8px; transition:all 0.4s ease; }
+.contato input { height:40px }
+.contato input:focus,.contato textarea:focus { background-color:#D5EBF8; }
+.contato .curriculo { width:100%; height:40px; display:block; background-color:#e5f5ff; border-color:#e5f5ff; font:14px/24px 'TitilliumWeb'; }
+#label-curriculo { position:absolute; top:0; left:0; z-index:0; width:100%; height:40px; color:#999; padding:8px; }
+.contato input[type="file"] { position:absolute; top:0; left:0; z-index:1; width:100%; height:40px; cursor:pointer; padding:0; border:none; opacity:0; }
+.contato input[type="submit"] { width:auto; cursor:pointer; height:35px; border:none; background-color:#ee7003; color:#fff; font:700 14px/1 'TitilliumWeb'; padding:5px; }
+.contato .retorno { color:#c00; font-weight:bold; }
+.contato .error:focus { background-color:#FFE3E3; border-color:#a00; }
+:-moz-ui-invalid { box-shadow:none; }
+:-moz-ui-invalid:focus { box-shadow:inset 0 0 3px #F00; }
+
+/* Representantes */
+/* #mapa_mundi { z-index:1; display:none; } */
+#mapa_america { z-index:1; visibility:hidden; }
+#container_mapa { position:relative; }
+#popup { position:absolute; background-color:rgba(0,0,0,0.5); border:solid 1px  #777; z-index:10; top:5%; right:5%; max-height:90%; overflow:auto; width:400px; max-width:100%; }
+#fechar_popup { z-index:2; background:url('../img/fechar.png') no-repeat center center; position:absolute; right:0; top:0; cursor:pointer; width:30px; height:30px; }
+#titulo_popup { z-index:1; font:700 24px/30px 'TitilliumWeb'; color:#FFF; padding:0 30px 0 15px; }
+#conteudo_popup { padding:15px; color:#fff; }
+.item-rep + .item-rep { margin-top:10px; padding-top:10px; border-top:dashed 1px #fff; }
+#filtro_popup { margin-bottom:15px; }
+#mapa { width:100%; height:450px; display:block; }
+
+/* portais */
+.portais-lista { width:auto; height:auto; overflow:hidden }
+.portais-lista > a { display:inline-block; width:100%; height:auto; margin-bottom:20px; text-align:center; text-decoration:none }
+.portais-lista > a:last-child { margin-bottom:0 }
+.portais-lista > a figure { width:auto; height:auto }
+.portais-lista > a figure img { max-width:100%; height:auto; vertical-align:middle }
+.portais-lista > a span { font:700 18px/20px "TitilliumWeb"; color:#1d3a8f; padding:6px }
+.portais-lista .download:after { background:rgba(122, 150, 194, 0.5) url("../img/download.png") no-repeat center center; content:""; height:100%; left:0; opacity:0; position:absolute; top:0; transition:all 0.3s ease 0s; width:100%; }
+.portais-lista .download:hover:after { opacity:1; }
+.portais-lista .link-download { display:block; padding:12px 12px 12px 40px; background:url('../img/link-download.png') no-repeat 5px center #164EA3; color:#fff; width:100%; font-weight:bold; text-align:left; transition:background-color 0.3s ease; }
+.link-download + .link-download { margin-top:20px; }
+.portais-lista .link-download:hover { background-color:#4f82d3; }
+
+/* busca */
+.resultados-busca { width:auto; height:auto; overflow:hidden; margin-bottom:25px }
+.resultados-busca .item { width:auto; height:auto; overflow:hidden; margin-bottom:5px }
+.resultados-busca .item a { color:#444; text-decoration:none }
+.resultados-busca .item a:hover { color:#1d3a8f }
+.resultados-busca .item a span { display:inline-block; width:auto; height:auto; padding:5px 10px; background:#008bd2; font-size:14px; color:#fff; text-align:center; margin-right:8px }
+
+/* revistas */
+.revista-lista { width:auto; height:auto; overflow:hidden; margin-bottom:25px }
+.revista-lista > div { display:inline-block; width:100%; height:auto; overflow:hidden; margin-bottom:20px; text-align:center }
+.revista-lista > div:last-child { margin-bottom:0 }
+.revista-lista > div figure { width:auto; height:auto }
+.revista-lista > div figure img { max-width:100%; height:auto; vertical-align:middle }
+.revista-lista > div > span.titulo { display:block; font:700 18px/20px "TitilliumWeb"; color:#1d3a8f; padding:6px }
+.revista-lista > div > span.titulo a { color:#1d3a8f; text-decoration:none }
+.revista-lista > div > span.breve { display:block; font:16px/20px "TitilliumWeb"; color:#444; padding:0 6px 6px 6px }
+.revista-lista > div > span.breve a { color:#444; text-decoration:none }
+.revista-lista > div > span.links { display:block }
+.revista-lista > div > span.links a { display:inline-block; font-size:12px; color:#fff; background-color:#049dfd; margin:0; padding:8px; text-decoration:none; text-transform:uppercase; /*float:right;*/ cursor:pointer }
+
+/* instituto */
+.instituto-galeria { width:auto; height:auto; margin:25px auto; overflow:hidden; max-width:960px; }
+.instituto-galeria figure { width:auto; height:auto; margin:0 5px 5px 0; float:left }
+.instituto-galeria figure img { max-width:100%; height:auto; vertical-align:middle }
+
+/*videos*/
+.col-videos{float: left; margin-bottom: 20px; width:480px;}
+.col-videos iframe{margin-top: 0;}
+
+/* Opções de financiamento */
+#lista-faq { display:block; margin:20px 0 40px; }
+.pergunta { display:block; padding-right:20px; background-color:#17479e; color:#ffffff; font:600 20px/1.2 'Open Sans'; cursor:pointer; position:relative; padding:8px; }
+.resposta { display:none; font:300 18px/1.4 'Open Sans'; color:#ffffff; background-color:#3b71d5; padding:0 20px; overflow:hidden; }
+.pergunta:after { content:''; position:absolute; width:20px; height:20px; background:url('../img/arrow-down.png') no-repeat center center; right:10px; top:50%; margin-top:-10px; }
+.questao.aberta .pergunta:after { background-image:url('../img/arrow-up.png'); }
+.questao + .questao { margin-top:10px; }
+
+/* representantes */
+.item-rep > a.mais-infos { display:inline-block; font-size:13px; color:#333; margin-top:8px; padding:5px 8px; background:#f8f8f8; border-radius:2px; text-decoration:none }
+
+/* paginacao */
+.paginacao { overflow:hidden; padding:15px; background-color:#eaeaea; color:#595959 }
+.qtd-resultados { float:left; font-weight:bold }
+.pag-resultados { float:right }
+.pag-resultados a { margin:0 2px; color:#595959; text-decoration:none }
+.pag-resultados a:hover { text-decoration:underline }
+.pag-resultados span { color:#595959; font-weight:bold }
+
+/* Rodapé */
+#rodape { background-color:#17479e; display:block; margin-top:30px; }
+#rodape > .central { padding:24px 20px; overflow:hidden; display:block; }
+#rodape .coluna { display:block; }
+#rodape .coluna + .coluna { margin:10px 0; }
+#rodape .titulo { display:block;color:#fff; font-weight:bold; margin-bottom:8px; }
+#rodape .coluna a { color:#c2cee5; display:block; text-decoration:none; text-transform:uppercase; }
+#rodape .coluna a:hover { text-decoration:underline; }
+#rodape #rodape-logo { margin-left:25px; text-align:right; display:block; -ms-flex:1; -webkit-flex:1; flex:1; }
+#copyright { background-color:#0e3a8b; color:#fff; border-top:solid 1px #0093d8; display:block; width:100%; }
+#copyright .central { padding:24px 0; font-size:14px; display:-webkit-flex; display:-ms-flex; display:flex; line-height:22px; }
+#copyright .espacamento { -webkit-flex:1; -ms-flex:1; flex:1; }
