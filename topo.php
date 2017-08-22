@@ -188,7 +188,6 @@ $(document).ready(function () {
 					<span class="menu produtos"><a href="/opcoes-financiamento/">FINANCIAMENTO</a></span>
 					<span class="menu produtos"><a href="/comunicacao-visual/">COMUNICAÇÃO VISUAL</a></span>
 					<span class="menu produtos"><a href="/comunicado/">COMUNICADO</a></span>
-					<span class="menu produtos"><a href="http://www.arxo.com.br/novidade/novidades/2017/07/17/arxo-celebra-parceria-com-cemo/">CEMO</a></span>
                     <? } else if ($idioma == 'es') { ?>
                     <span class="blog"><a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a></span>
 					<? } ?>

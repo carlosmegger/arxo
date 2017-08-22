@@ -43,7 +43,7 @@ $_rotulos = array(
 	'home qualidade 1'		  => 'Quality and safety of a leading company',
 	'home qualidade 2'		  => 'This is Arxo:',
 	# menu principal
-	'quem somos'              => 'ABOUT IS',
+	'quem somos'              => 'ABOUT US',
 	'produtos'                => 'PRODUCTS AND SERVICES',
 	'novidades'               => 'NEWS',
 	'contato'                 => 'CONTACT',
