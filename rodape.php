@@ -18,13 +18,13 @@
                 <a href="<?=($idioma!='br'?$idioma.'/':'').$cat->slug?>/"><?=$cat->titulo?></a>
                 <?php } ?>
 			</span>
+			<? if ($idioma == 'br' | $idioma == 'es'){?>
 			<span class="coluna">
 				<span class="titulo"><?=$_rotulos['novidades']?></span>
-				<? if ($idioma == 'br'){?>
 				<a href="<?=$_links['novidades']?>"><?=$_rotulos['noticias']?></a>
-				<? } ?>
 				<a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a>
 			</span>
+			<? } ?>
 			<span class="coluna">
 				<span class="titulo"><?=$_rotulos['contato']?></span>
 				<a href="<?=$_links['fale conosco']?>"><?=$_rotulos['fale conosco']?></a>

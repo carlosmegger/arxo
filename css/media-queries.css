@@ -1,7 +1,8 @@
 @media screen and (max-width : 480px){
 .col-videos{float: none; margin:auto; width:300px;}
+.table-product{ width: 320px; }
+.table-product tr td{ color:#4f6b93; padding: 2px; font-size: 10px;}
 }
-
 @media screen and (min-width : 480px){
 
 	#descricao-home { padding:32px 0; }
@@ -23,12 +24,12 @@
 
 	/*video*/
 	.col-videos{float: none; margin:auto; width:400px;}
+	.table-product{ width: 440px; }
 
 	/* Forms */
 	.contato .duas-colunas { margin-bottom:8px; display:-webkit-flex; -webkit-align-items:center; display:-ms-flex; -ms-align-items:center; display:flex; align-items:center; }
 	.contato .duas-colunas > span { -webkit-flex:1; -ms-flex:1; flex:1; margin-bottom:0; }
 	.contato .duas-colunas > span + span { margin-left:8px; }
-
 }
 @media screen and (min-width : 640px){
 
@@ -84,6 +85,7 @@
 
 	/*videos*/
 	.col-videos{float: none; margin:auto; width:600px;}
+	.table-product{ width: 600px; }
 
 	/* Produtos */
 	.header-produtos h1:before { content:''; background:rgba(255,255,255,0.30); height:100%; width:500%; position:absolute; right:41px; top:0; }
@@ -95,7 +97,6 @@
 	.header-produtos-detalhe .titulo { background:url('../img/grafismo-2.png') no-repeat right center; }
 	.header-produtos-detalhe .titulo h1 { font:700 48px/1 "TitilliumWeb"; }
 	.header-produtos-detalhe .titulo h2 { font:36px/48px 'TitilliumWeb'; }
-
 	#form-orcamento { box-sizing:border-box; overflow:hidden; }
 	#form-orcamento * { box-sizing:border-box; }
 	#form-orcamento span.linha { margin-right:0; margin-top:5px; display:-webkit-flex; -webkit-flex-direction:row; display:-ms-flex; -ms-flex-direction:row; display:flex; flex-direction:row; }
@@ -112,12 +113,11 @@
 	#form-orcamento input[type=submit] { font:700 20px/45px 'TitilliumWeb'; width:100%; height:53px; /*height:131px*/ }
 	/*.g-recaptcha iframe { display:block; margin:0 0 5px; }*/
 	#form-orcamento input[name=titulo] { margin-bottom:5px !important; }
-
 	.item-noticia figure { float:left; margin:0 20px 20px 0; }
-
 	.coluna-representante { float:left; width:48%; }
 	.coluna-representante + .coluna-representante { margin-left:4%; }
 }
+
 @media screen and (min-width : 768px){
 
 	#lista-produtos a { display:block; float:left; }
@@ -145,6 +145,7 @@
 	#form-orcamento .relacionados > div label { display:inline-block; width:50%; vertical-align:top }
 	#form-orcamento .relacionados > div label:nth-child(2n+0){ width:49%; margin:0 0 0 1% }
 	#form-orcamento .relacionados > div label span { width:95% }
+	.table-product{ width: 740px; }
 
 	/* home */
 	#postagens .lista > div > div { width:59.5% }
@@ -164,6 +165,7 @@
 
 	/* home */
 	#postagens .lista > div > div { width:64.2% }
+	.table-product{ width: 785px; }
 
 }
 @media screen and (min-width : 960px){
@@ -200,10 +202,8 @@
 
 }
 @media screen and (min-width : 1280px){
-
 	/* produto */
 	#produto .botao-orcamento { display:none }
-	
 	.orcamento-suspenso { display:block; position:fixed; width:auto; height:auto; top:480px; right:0; z-index:998 }
 	.orcamento-suspenso img { vertical-align:middle }
 

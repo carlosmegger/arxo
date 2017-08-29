@@ -433,6 +433,11 @@ aside nav a:before { content:'> '; display:inline-block; margin-right:3px; color
 .pag-resultados a:hover { text-decoration:underline }
 .pag-resultados span { color:#595959; font-weight:bold }
 
+/*table de produtos*/
+.table-product{ width: 740px; }
+.table-product tr td{ color:#4f6b93; padding: 6px; text-align: center;}
+.table-product tr:nth-child(odd){background-color: #c5d9f1;}
+
 /* Rodapé */
 #rodape { background-color:#17479e; display:block; margin-top:30px; }
 #rodape > .central { padding:24px 20px; overflow:hidden; display:block; }
