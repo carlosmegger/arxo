@@ -130,6 +130,10 @@ RewriteRule ^pressure-equipment/([^/]+)/([^/]+)/$ /en/pressure-equipment/$1/$2/ 
 RewriteRule ^en/pressure-equipment/?$ produtos.php?slug=pressure-equipment&idioma=en [NC,L]
 RewriteRule ^en/pressure-equipment/([^/]+)/([^/]+)/?$ produtos.php?slug=pressure-equipment&tag=$1&idproduto=$2&idioma=en [NC,L]
 
+RewriteRule ^presurizados/$ /es/presurizados/ [R=301,NC,L]
+RewriteRule ^presurizados/([^/]+)/([^/]+)/$ /es/presurizados/$1/$2/ [R=301,NC,L]
+RewriteRule ^es/presurizados/?$ produtos.php?slug=presurizados&idioma=es [NC,L]
+RewriteRule ^es/presurizados/([^/]+)/([^/]+)/?$ produtos.php?slug=presurizados&tag=$1&idproduto=$2&idioma=es [NC,L]
 
 # --- novidades
 RewriteRule ^noticias/(.*)$ /novidades/$1 [R=301,NC,L]
@@ -259,6 +263,12 @@ RewriteRule ^(en|es)/busca/([^/]+)/([\d]+)/?$ busca.php?idioma=$1&busca=$2&pagin
 
 # --- videos
 RewriteRule ^videos/?$ videos.php?idioma=br [NC,L]
+
+
+# --- linha pressurizados
+RewriteRule ^linha-pressurizados/?$ linha-pressurizados.php?idioma=br [NC,L]
+RewriteRule ^en/line-pressure/?$ linha-pressurizados.php?idioma=en [NC,L]
+RewriteRule ^es/linea-pressurizados/?$ linha-pressurizados.php?idioma=es [NC,L]
 
 # --- ajax
 RewriteRule ^lista_representantes$ ajax/ajax.php?acao=listaRepresentantes [NC,L]

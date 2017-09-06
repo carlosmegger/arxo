@@ -55,6 +55,8 @@ $_rotulos = array(
 	'historiaarxo'            => 'LA HISTORIA DE ARXO',
 	'premios e certificacoes' => 'PREMIOS Y CERTIFICACIONES',
 	'clientes'                => 'CLIENTES',
+	#linha pressurizadas
+	'linha pressurizada'	   => 'Linea Presurizados para GLP',
 	# categorias
 	'combustivel'             => 'COMBUSTIBLE',
 	'industria'               => 'INDUSTRIA',

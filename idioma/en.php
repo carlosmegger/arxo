@@ -56,6 +56,8 @@ $_rotulos = array(
 	'historiaarxo'            => 'OUR HISTORY',
 	'premios e certificacoes' => 'REWARDS AND CERTIFICATIONS',
 	'clientes'                => 'CLIENTS',
+	# linha pressurizada
+	'linha pressurizada'	   => 'Line Pressure Vessels for LPG',
 	# categorias
 	'combustivel'             => 'COMBUSTÍVEL',
 	'industria'               => 'INDUSTRY',
