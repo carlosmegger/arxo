@@ -133,16 +133,17 @@ $(document).ready(function () {
                             <?php foreach($categorias as $cat){ ?>
                             <option value="<?=($idioma!='br'?$idioma.'/':'').$cat->slug?>/"><?=$cat->titulo?></option>
                             <?php } ?>
+                            <? if ($idioma == 'br'){?>
+                            <option value="/comunicacao-visual/">Comunicação Visual</option>
+                            <? } ?>
                         </optgroup>
                         <? if ($idioma == 'br'){?>
-                            <option value="<?=$_links['blog']?>"><?=$_rotulos['blog']?></option>
-						<!--optgroup label="<?=$_rotulos['novidades']?>">
+                        <!--<option value="<?=$_links['blog']?>"><?=$_rotulos['blog']?></option>-->
+						<optgroup label="<?=$_rotulos['novidades']?>">
                             <option value="<?=$_links['novidades']?>"><?=$_rotulos['noticias']?></option>
-                            <option value="<?=$_links['simposio']?>"><?=$_rotulos['simposio']?></option>
-                        </optgroup-->
-                        <? } else { ?>
                             <option value="<?=$_links['blog']?>"><?=$_rotulos['blog']?></option>
-                        <? } ?>
+                        </optgroup>
+                        <? }?>
                         <optgroup label="<?=$_rotulos['contato']?>">
                             <option value="<?=$_links['fale conosco']?>"><?=$_rotulos['fale conosco']?></option>
                             <? if ($idioma == 'br'){?>
@@ -175,19 +176,23 @@ $(document).ready(function () {
                             <?php foreach($categorias as $cat){ ?>
                             <a href="<?=($idioma!='br'?$idioma.'/':'').$cat->slug?>/"><?=$cat->titulo?></a>
                             <?php } ?>
+                            <? if ($idioma == 'br'){?>
+                            <a href="/comunicacao-visual/">COMUNICAÇÃO VISUAL</a>
+                            <? } ?>
                         </span>
                     </span>
 					<? if ($idioma == 'br'){?>
-                    <span class="blog"><a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a></span>
-					<!--span class="menu novidades"><a href="<?=$_links['novidades']?>"><?=$_rotulos['novidades']?></a>
+                    <!--<span class="blog"><a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a></span>-->
+					<span class="menu novidades"><a href="<?=$_links['novidades']?>"><?=$_rotulos['novidades']?></a>
                         <span class="submenu">
                             <a href="<?=$_links['novidades']?>"><?=$_rotulos['noticias']?></a>
                             <a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a>
                         </span>
-                    </span-->
+                    </span>
 					<span class="menu produtos"><a href="/opcoes-financiamento/">FINANCIAMENTO</a></span>
-					<span class="menu produtos"><a href="/comunicacao-visual/">COMUNICAÇÃO VISUAL</a></span>
-					<span class="menu produtos"><a href="/comunicado/">COMUNICADO</a></span>
+                    <span class="menu produtos"><a href="/parceiros/">PARCEIROS</a></span>
+					<!--<span class="menu produtos"><a href="/comunicacao-visual/">COMUNICAÇÃO VISUAL</a></span>-->
+					<!--<span class="menu produtos"><a href="/comunicado/">COMUNICADO</a></span>-->
                     <? } else if ($idioma == 'es') { ?>
                     <span class="blog"><a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a></span>
 					<? } ?>

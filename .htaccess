@@ -122,8 +122,8 @@ RewriteRule ^posto-revendedor/([^/]+)/([^/]+)/?$ produtos.php?slug=posto-revende
 RewriteRule ^ponto-abastecimento-trr/?$ produtos.php?slug=ponto-abastecimento-trr&idioma=br [NC,L]
 RewriteRule ^ponto-abastecimento-trr/([^/]+)/([^/]+)/?$ produtos.php?slug=ponto-abastecimento-trr&tag=$1&idproduto=$2&idioma=br [NC,L]
 
-RewriteRule ^pressurizados/?$ produtos.php?slug=pressurizados&idioma=br [NC,L]
-RewriteRule ^pressurizados/([^/]+)/([^/]+)/?$ produtos.php?slug=pressurizados&tag=$1&idproduto=$2&idioma=br [NC,L]
+RewriteRule ^pressurizados-glp/?$ produtos.php?slug=pressurizados-glp&idioma=br [NC,L]
+RewriteRule ^pressurizados-glp/([^/]+)/([^/]+)/?$ produtos.php?slug=pressurizados-glp&tag=$1&idproduto=$2&idioma=br [NC,L]
 
 RewriteRule ^pressure-equipment/$ /en/pressure-equipment/ [R=301,NC,L]
 RewriteRule ^pressure-equipment/([^/]+)/([^/]+)/$ /en/pressure-equipment/$1/$2/ [R=301,NC,L]
@@ -186,6 +186,12 @@ RewriteRule ^brands/([^/]+)/([^/]+)/$ /en/brands/$1/$2/ [R=301,NC,L]
 
 RewriteRule ^en/brands/?$ marcas.php?idioma=en [NC,L]
 RewriteRule ^en/brands/([^/]+)/([^/]+)/?$ marcas.php?idioma=en&slug=$2&id=$3 [NC,L]
+
+# --- parceiros
+RewriteRule ^parceiros/?$ parceiros.php?idioma=br [NC,L]
+
+# --- curriculos
+RewriteRule ^curriculos/?$ curriculos.php?idioma=br [NC,L]
 
 # --- contato
 RewriteRule ^contato/?$ fale-conosco.php?idioma=br [NC,L]

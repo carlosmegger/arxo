@@ -40,7 +40,7 @@ $_rotulos = array(
 	# topo
 	'resultados busca'		=> 'Resultados da busca por:',
 	# menu principal
-	'quem somos'              => 'QUEM SOMOS',
+	'quem somos'              => 'SOBRE NÓS',
 	'produtos'                => 'PRODUTOS E SERVIÇOS',
 	'novidades'               => 'NOVIDADES',
 	'contato'                 => 'CONTATO',

@@ -439,14 +439,14 @@ aside nav a:before { content:'> '; display:inline-block; margin-right:3px; color
 .table-product tr:nth-child(odd){background-color: #c5d9f1;}
 
 /* Rodapé */
-#rodape { background-color:#17479e; display:block; margin-top:30px; }
+#rodape { background-color:#17479e; display:block; font-size: 14px; margin-top:30px; }
 #rodape > .central { padding:24px 20px; overflow:hidden; display:block; }
 #rodape .coluna { display:block; }
 #rodape .coluna + .coluna { margin:10px 0; }
 #rodape .titulo { display:block;color:#fff; font-weight:bold; margin-bottom:8px; }
 #rodape .coluna a { color:#c2cee5; display:block; text-decoration:none; text-transform:uppercase; }
 #rodape .coluna a:hover { text-decoration:underline; }
-#rodape #rodape-logo { margin-left:25px; text-align:right; display:block; -ms-flex:1; -webkit-flex:1; flex:1; }
+#rodape #rodape-logo { margin-left:16px; text-align:right; display:block; -ms-flex:1; -webkit-flex:1; flex:1; }
 #copyright { background-color:#0e3a8b; color:#fff; border-top:solid 1px #0093d8; display:block; width:100%; }
 #copyright .central { padding:24px 0; font-size:14px; display:-webkit-flex; display:-ms-flex; display:flex; line-height:22px; }
 #copyright .espacamento { -webkit-flex:1; -ms-flex:1; flex:1; }

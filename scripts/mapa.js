@@ -24,16 +24,26 @@ var filiais = [
 	    cep: 'CEP: 55613-010'
 	},
 	{
-		lat:-25.291003,
-		lng:-57.586808,
-	    cidade: 'Assunção',
-	    estado: 'Paraguai',
+		lat:-23.4191675,
+		lng:-46.8242699,
+	    cidade: 'Cajamar',
+	    estado: 'São Paulo | Brasil',
 	    titulo: 'Filial Comercial',
+	    telefone: '+55 11 5508.6525',
+	    fax: '',
+	    endereco: 'Rua Cordeirópolis, 37',
+	    bairro: 'Jardim Paraiso',
+	    cep: 'CEP: 07794-100'
+	},
+	{
+		lat:-25.3174755,
+		lng:-54.6913351,
+	    cidade: 'Alto Paraná',
+	    estado: 'Paraguai',
+	    titulo: 'Filial Industrial',
 	    telefone: '595 21 620.7836',
 	    fax: '',
-	    endereco: 'Av. Mcal. López, 3794 – 4º Piso - Edifício Citi Center',
-	    bairro: '',
-	    cep: ''
+	    endereco: 'Super Carretera, KM 5,5 - Hernandarias'
 	}
 ];
 function initMap(){

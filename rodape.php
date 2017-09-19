@@ -17,12 +17,23 @@
 				<?php foreach($categorias as $cat){ ?>
                 <a href="<?=($idioma!='br'?$idioma.'/':'').$cat->slug?>/"><?=$cat->titulo?></a>
                 <?php } ?>
+                <? if ($idioma == 'br'){?>
+                <a href="/comunicacao-visual/">COMUNICAÇÃO VISUAL</a>
+                <? } ?>
 			</span>
 			<? if ($idioma == 'br' | $idioma == 'es'){?>
 			<span class="coluna">
 				<span class="titulo"><?=$_rotulos['novidades']?></span>
 				<a href="<?=$_links['novidades']?>"><?=$_rotulos['noticias']?></a>
 				<a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a>
+			</span>
+			<? } ?>
+			<? if ($idioma == 'br'){?>
+			<span class="coluna">
+				<span class="titulo"><a href="/opcoes-financiamento/">FINANCIAMENTO</a></span>
+			</span>
+			<span class="coluna">
+				<span class="titulo"><a href="/parceiros/">PARCEIROS</a></span>
 			</span>
 			<? } ?>
 			<span class="coluna">
@@ -34,7 +45,7 @@
 				<a href="<?=$_links['representantes']?>"><?=$_rotulos['representantes']?></a>
 				<a href="<?=$_links['localizacao']?>"><?=$_rotulos['localizacao']?></a>
 			</span>
-			<a id="rodape-logo" href="./"><img src="img/<?=$idioma?>-logo-rodape.png" alt="ARXO"></a>
+			<a id="rodape-logo" href="./"><img src="img/<?=$idioma?>-logo-rodape.png?" alt="ARXO"></a>
 		</span>
 	</span>
 	<span id="copyright">
