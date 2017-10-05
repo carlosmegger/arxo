@@ -18,7 +18,7 @@
 			<? if ($idioma == 'br'){?>
 
 			<div class="conteudo" id="produto">
-				<br>
+				<br><!--
 				<p style="text-align: justify;">
 				Em busca de desenvolvimento tecnológico, Arxo firma parceria com Speed Solutions. A empresa colombiana pesquisa, desenvolve e fabrica sistemas para medição e monitoramento ambiental, além de gestão de combustíveis líquidos: GLP e GNV.</p>
 				<p style="text-align: justify;">
@@ -32,6 +32,7 @@
 				Já o Speedprint Link é um sistema de controle industrial de fluidos, gestão de frotas e telemedição (inventário de combustível).</p>
 				<p style="text-align: justify;">
 				Com essa parceria a Arxo passa a ser a única distribuidora oficial da Speed Solution no Brasil, aumentando seu leque de produtos e unindo a força e a experiência de duas grandes referências de mercado.</p> 
+				-->
 
 				<div id="lista-produtos">
 					<div>
