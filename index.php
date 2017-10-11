@@ -64,21 +64,28 @@
 
 	<section id="novidades-home" class="central">
 		<!--h1>Parceiros</h1-->
-        <table width="600" border="0" cellspacing="10" cellpadding="10" align="center">
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="http://www.abieps.com.br/" target="_blank"><img src="img/abieps.png" width="281" height="105"></a></td>
-    <td><a href="https://www.pei.org/" target="_blank"><img src="img/pei-member.png" width="200" height="74"></a></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-      </table>
-
+		<ul>
+			<li><a href="http://www.abieps.com.br/" target="_blank"><img src="img/abieps.png" width="281" height="105"></a></li>
+			<li><a href="https://www.pei.org/" target="_blank"><img src="img/pei-member.png" width="200" height="74"></a></li>
+			<li><a href="http://www.abimaq.org.br/" target="_blank"><img src="img/abimaq.png" width="98" height="111"></a></li>
+		</ul>
+		<!--
+		<table width="600" border="0" cellspacing="10" cellpadding="10" align="center">
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td><a href="http://www.abieps.com.br/" target="_blank"><img src="img/abieps.png" width="281" height="105"></a></td>
+				<td style="padding-left:20px"><a href="https://www.pei.org/" target="_blank"><img src="img/pei-member.png" width="200" height="74"></a></td>
+				<td style="padding-left:20px"><a href="http://www.abimaq.org.br/" target="_blank"><img src="img/abimaq.png" width="98" height="111"></a></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	-->
 	</section>
 
 <? include('rodape.php'); ?>
