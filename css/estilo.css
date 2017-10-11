@@ -169,7 +169,7 @@ header nav .submenu a { padding:8px; text-transform:uppercase; }
 #descricao-home .colunas span { font:16px/1.5 'TitilliumWeb'; text-align:justify; text-transform:uppercase; display:block; margin-bottom:1em; }
 #descricao-home p { font:16px/30px 'TitilliumWeb'; text-align:center; text-transform:uppercase; }
 
-#novidades-home { overflow:hidden; }
+#novidades-home { overflow:hidden; padding:22px 0;}
 #novidades-home h1 { margin:60px 0 30px; font:700 24px/1 'TitilliumWeb'; color:#1d3a8f; height:24px; display:block; position:relative; }
 #novidades-home h1:after { content:''; width:100%; background-color:#dff0f9; height:24px; display:inline-block; vertical-align:top; position:absolute; left:130px; top:0; }
 #novidades-home article { margin-bottom:1em; overflow:hidden; }
@@ -180,6 +180,8 @@ header nav .submenu a { padding:8px; text-transform:uppercase; }
 #novidades-home p { font:13px/1.2 'TitilliumWeb'; }
 #novidades-home p a { color:#444; text-decoration:none }
 .leia-mais { color:#fff; background-color:#049dfd; text-decoration:none; text-transform:uppercase; padding:8px; cursor:pointer; display:block; float:right; margin:10px 0 0; font-size:12px; }
+#novidades-home ul li{ float: left; margin-right:30px; list-style:none;}
+
 
 /* Conteúdo */
 .conteudo { overflow:hidden; }
@@ -336,6 +338,8 @@ aside nav a:before { content:'> '; display:inline-block; margin-right:3px; color
 #miniaturas img {vertical-align: top; }
 #miniaturas a { background-color:#fff; transition:all 0.3s ease; opacity:0.5; cursor:pointer; vertical-align:top; display:inline-block; }
 #miniaturas a:hover { opacity:1; }
+
+
 
 /* Certificações */
 #lista-certificacoes li { position:relative; padding:0 20px; margin-bottom:10px; list-style:none; }

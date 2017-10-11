@@ -2,6 +2,8 @@
 .col-videos{float: none; margin:auto; width:300px;}
 .table-product{ width: 320px; }
 .table-product tr td{ color:#4f6b93; padding: 2px; font-size: 10px;}
+#novidades-home ul li{ width: 100%; text-align: center; margin-bottom:26px;}
+#novidades-home ul li:last-child{margin-bottom:0;}
 }
 @media screen and (min-width : 480px){
 
