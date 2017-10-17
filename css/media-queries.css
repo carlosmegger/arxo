@@ -168,8 +168,8 @@
 	/* home */
 	#postagens .lista > div > div { width:64.2% }
 	.table-product{ width: 785px; }
-
 }
+
 @media screen and (min-width : 960px){
 
 	.central { padding:0 }
@@ -201,6 +201,9 @@
 	/* produtos */
 	#form-orcamento .relacionados { margin-bottom:15px }
 	#form-orcamento .relacionados > div label { margin-bottom:5px }
+
+	/*menu*/
+	#logo-ptbr {float: left;margin: 44px 20px 20px 0;}
 
 }
 @media screen and (min-width : 1280px){

@@ -110,7 +110,11 @@ $(document).ready(function () {
             </div>
         </div>
         <div class="central">
-            <figure id="logo"><a href="./"><img src="img/logo-<?=$idioma?>.png" alt="Arxo" /></a></figure>
+            <? if ($idioma == 'br'){?>
+                <figure id="logo-ptbr"><a href="./"><img src="img/logo-<?=$idioma?>.png" alt="Arxo" /></a></figure>
+            <? } else {?>
+                <figure id="logo"><a href="./"><img src="img/logo-<?=$idioma?>.png" alt="Arxo" /></a></figure>
+            <? } ?>
             <div id="bandeiras">
                 <a href="en/" id="en"></a>&nbsp;&nbsp;&nbsp;
                 <a href="br/" id="br"></a>&nbsp;&nbsp;&nbsp;
@@ -159,7 +163,7 @@ $(document).ready(function () {
                     </select>
                 </div>
                 <div class="desktop">
-                    <? if ($page != 'index'){?><a href="./" class="index">HOME</a><? } ?>
+                    <!--<? if ($page != 'index'){?><a href="./" class="index">HOME</a><? } ?>-->
                     <span class="menu quem-somos"><a href="<?=$_links['institucional']?>"><?=$_rotulos['quem somos']?></a>
                         <span class="submenu">
                             <a href="<?=$_links['institucional']?>"><?=$_rotulos['institucional']?></a>
@@ -182,7 +186,6 @@ $(document).ready(function () {
                         </span>
                     </span>
 					<? if ($idioma == 'br'){?>
-                    <!--<span class="blog"><a href="<?=$_links['blog']?>" target="_blank"><?=$_rotulos['blog']?></a></span>-->
 					<span class="menu novidades"><a href="<?=$_links['novidades']?>"><?=$_rotulos['novidades']?></a>
                         <span class="submenu">
                             <a href="<?=$_links['novidades']?>"><?=$_rotulos['noticias']?></a>

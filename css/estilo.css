@@ -109,6 +109,7 @@ figure img { max-width:100%; vertical-align:top; }
 .midias .youtube:hover { background-position:-112px bottom; }
 
 #logo { float:left; margin:20px 20px 20px 0; }
+#logo-ptbr {margin: 20px 20px 20px 0; text-align: center;}
 
 #bandeiras { display:-webkit-flex; -webkit-flex-flow:row nowrap; -webkit-justify-content:space-between; display:-ms-flex; -ms-flex-flow:row nowrap; -ms-justify-content:space-between; display:flex; flex-flow:row nowrap; justify-content:space-between; width:auto; margin:20px 0; float:right; text-align:right }
 #bandeiras a { background:url('../img/flags.png') no-repeat left; width:16px; height:11px; display:inline-block; }
@@ -117,6 +118,7 @@ figure img { max-width:100%; vertical-align:top; }
 #bandeiras #es { background-position:-46px top; }
 #lupa { cursor:pointer; vertical-align:middle; }
 
+header{ background:#fbfbfb; }
 header nav { clear:both; position:relative; margin-bottom:10px; }
 header nav a { font-size:17px; line-height:27px; color:#008bd2; text-decoration:none; transition:color 0.3s ease; }
 header nav a:hover { color:#ee7003; }
