@@ -118,7 +118,7 @@ figure img { max-width:100%; vertical-align:top; }
 #bandeiras #es { background-position:-46px top; }
 #lupa { cursor:pointer; vertical-align:middle; }
 
-header{ background:#fbfbfb; }
+header{ background:#fbfbfb; border-bottom: 1px solid #f9f7f7; }
 header nav { clear:both; position:relative; margin-bottom:10px; }
 header nav a { font-size:17px; line-height:27px; color:#008bd2; text-decoration:none; transition:color 0.3s ease; }
 header nav a:hover { color:#ee7003; }
